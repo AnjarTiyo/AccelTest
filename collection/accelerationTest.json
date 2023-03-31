@@ -428,13 +428,28 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "52de5f1f-6f2d-4974-90aa-8965dcbd2bbc",
+						"id": "d36c461e-a359-4dcf-9709-0047bd7370f1",
 						"type": "text/javascript",
 						"exec": [
 							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
 							"",
-							"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
+							"pm.sendRequest(url, function (err, response) {",
 							"    console.log(response.json());",
+							"});",
+							"",
+							"pm.sendRequest({",
+							"    url: url,",
+							"    method: 'POST',",
+							"    header: 'Content-Type:application/json',",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({ ",
+							"            username: pm.environment.get('registeredUsername'),",
+							"            password: \"password\"",
+							"            })",
+							"    }",
+							"}, function (err, res) {",
+							"    console.log(res);",
 							"});"
 						]
 					}
@@ -442,7 +457,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f823b594-5564-4a6c-adf2-b89d74c9adee",
+						"id": "96c40699-bcaa-48f5-9e37-2b9bf4816dcf",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -547,17 +562,17 @@
 	],
 	"variable": [
 		{
-			"id": "5cb9e160-6b4b-44c0-8e8a-1728fc4e21aa",
+			"id": "7c145dd9-f142-4e85-bd4a-d7d988cf7151",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "de1dfcd3-cec9-4cec-adcc-37cbd8089582",
+			"id": "7e5ba0e5-7a28-4533-9dd1-3b705d3ce1db",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "541ee90e-dc68-4d5f-b77e-e051743c634a",
+			"id": "50953511-9d89-4646-95c7-031dc953bd03",
 			"key": "reqBody",
 			"value": ""
 		}
