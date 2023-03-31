@@ -364,6 +364,20 @@
 			"item": [
 				{
 					"name": "Get User Profile with valid token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a203fdeb-48b7-4587-874c-50b8f0c1a210",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "c82dc91a-c5e4-4140-8b84-2d2ab01e586b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -558,17 +572,17 @@
 	],
 	"variable": [
 		{
-			"id": "e2d02759-acfd-4f1b-8837-2fe61ac9257e",
+			"id": "79f057ad-ae96-4534-b344-23d3dfd0b3ab",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "3e2cb4da-3a7b-490c-8ea8-7e23dfed0ff7",
+			"id": "82a495d0-add6-4a10-9be0-d765344700db",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "4a23a2ba-02cc-4456-8407-dd6162a3c3bf",
+			"id": "245c40a9-735f-4436-b2bd-bbc0c4984de6",
 			"key": "reqBody",
 			"value": ""
 		}
