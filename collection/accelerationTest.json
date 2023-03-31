@@ -759,10 +759,9 @@
 					},
 					"request": {
 						"auth": {
-							"type": "oauth2",
-							"oauth2": {
-								"headerPrefix": "Bearer",
-								"addTokenTo": "header"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{sessionToken}}"
 							}
 						},
 						"method": "POST",
@@ -814,17 +813,17 @@
 	],
 	"variable": [
 		{
-			"id": "4c81bbd2-9be6-44db-b309-851a8ec51bf0",
+			"id": "5d2c124a-cb34-4ced-833a-1b3d71a3293c",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "87b86929-27ac-4634-9261-8817084ed8b4",
+			"id": "f2fbdd07-38fe-43da-90cf-435d4985a358",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "342c9fd8-c923-467d-9a34-cfe6a475f4c5",
+			"id": "96900dfa-0cdd-4593-91f7-3a3d7502fd6b",
 			"key": "reqBody",
 			"value": ""
 		}
