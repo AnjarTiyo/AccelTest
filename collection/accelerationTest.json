@@ -712,7 +712,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "13a88249-a5fc-4f19-80ca-af618aba2c05",
+						"id": "5fdd075f-5399-4f94-9ec0-8002d428c35e",
 						"type": "text/javascript",
 						"exec": [
 							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
@@ -730,6 +730,7 @@
 							"    }",
 							"}, function (err, res) {",
 							"    pm.environment.set(\"sessionToken\", res.json().data.access_token.token);",
+							"    console.log(pm.environment.get(\"sessionToken\"))",
 							"});"
 						]
 					}
@@ -737,7 +738,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "357711b6-f6fe-4d90-9e70-23cac73c88b0",
+						"id": "fe5d5cd7-4e4b-412f-bc4a-2afac3ead407",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -775,17 +776,17 @@
 	],
 	"variable": [
 		{
-			"id": "c4ab992c-00be-4d43-9293-3c44d08ccb93",
+			"id": "43a3fe64-efcc-42a5-b30b-fc592a771cd9",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "50d5f738-9919-425c-9cf9-c716ac425462",
+			"id": "d2e1a059-6b57-4aeb-8f08-d6420e6a110b",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "e346cb5d-2483-445a-ac01-f8bd86db2c9b",
+			"id": "cbc23f03-e00b-40d3-98e9-8331afc7d11d",
 			"key": "reqBody",
 			"value": ""
 		}
