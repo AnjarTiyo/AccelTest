@@ -827,17 +827,17 @@
 	],
 	"variable": [
 		{
-			"id": "616996ea-4f7f-457b-8c46-34a1efdcd967",
+			"id": "543fe5f7-294c-4215-addb-444e669f91f1",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "e5fa0813-7298-47f7-947c-9ec95f1c16cc",
+			"id": "919d0f9a-5dbe-4f60-8470-fa5483f0fda7",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "b88760a3-1f41-4719-a47f-400dc1304f42",
+			"id": "dceb217c-0f8e-4905-b5fd-d30d288ae099",
 			"key": "reqBody",
 			"value": ""
 		}
