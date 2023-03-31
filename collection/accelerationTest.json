@@ -1001,6 +1001,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "beb61b02-a7e4-4fd5-b99a-ef06bf89fe47",
+								"exec": [
+									"var session = pm.iterationData.get(\"authType\")"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"id": "3bf31adb-a044-47d5-953a-43fc5c076e03",
@@ -1063,17 +1073,17 @@
 	],
 	"variable": [
 		{
-			"id": "74e4887c-de4d-4523-9a34-cfa4253505f3",
+			"id": "0dc3eca5-fc13-4a24-9203-65e7c07a3201",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "0c72f028-b658-4eee-a32d-2c6e44360354",
+			"id": "a044cc28-8a9e-48f0-b4a4-809ad7567af7",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "de63bfe2-a948-4741-bdbb-6b197d8f07ed",
+			"id": "25de6f4b-89f7-4f07-bbf2-82b23eb8b7f5",
 			"key": "reqBody",
 			"value": ""
 		}
