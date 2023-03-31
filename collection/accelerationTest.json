@@ -567,7 +567,7 @@
 									"",
 									"pm.variables.set(\"randomGender\", gender[_.random(gender.length -1)]);",
 									"",
-									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\" && emailStatus== \"TRUE\" && nameStatus== \"TRUE\"){",
+									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\" && emailStatus== \"TRUE\" && nameStatus== \"TRUE\" && genderStatus== \"TRUE\" && addressStatus== \"TRUE\" && phoneStatus== \"TRUE\"){",
 									"    var body = {",
 									"        \"username\": username,",
 									"        \"password\": password,",
@@ -694,17 +694,17 @@
 	],
 	"variable": [
 		{
-			"id": "d3a4f8e9-8115-4e00-80ca-dc4347b33279",
+			"id": "dc16dcab-a1e3-4cdf-87c0-65b71eb5f3fd",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "242ba4e8-cf46-401e-b9bf-dee8cb27d6c4",
+			"id": "39214df0-ec29-44b7-a155-7d5c68cb9317",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "49121eab-4db7-41fa-9203-eb96b9a672e9",
+			"id": "a263dc85-e272-45f4-938d-7ad160fce80f",
 			"key": "reqBody",
 			"value": ""
 		}
