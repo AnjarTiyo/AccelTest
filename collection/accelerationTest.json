@@ -1010,6 +1010,8 @@
 									"    });",
 									"",
 									"    pm.environment.set(\"inactiveSession\", pm.environment.get(\"session\"));",
+									"}else {",
+									"    ",
 									"}",
 									"",
 									"",
@@ -1101,17 +1103,17 @@
 	],
 	"variable": [
 		{
-			"id": "e9b797a5-e784-46ff-ab32-7d428c03fe77",
+			"id": "27db2372-7779-4c5c-adb7-a882e921b01b",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "08c1c4bd-3356-4cf0-85a4-cc0771b17c1b",
+			"id": "ea281541-0f3c-48d1-bf35-d61ea156391a",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "ec53abc8-9f62-4a85-a63e-a2f8deb73b39",
+			"id": "1cefeb04-d013-4c94-a400-6933591a8aeb",
 			"key": "reqBody",
 			"value": ""
 		}
