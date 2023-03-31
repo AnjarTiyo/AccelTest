@@ -380,7 +380,7 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"pm.test(\"Status code name has string\", function () {",
+									"pm.test(\"Message is correct\", function () {",
 									"    pm.response.to.have.status(\"Created\");",
 									"});"
 								],
@@ -618,17 +618,17 @@
 	],
 	"variable": [
 		{
-			"id": "f01e8777-79f1-4f35-978e-c562d57659ff",
+			"id": "daa06532-b1f0-49b3-9ff8-fb6c78fdb7b5",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "03109c49-4062-4b42-ae86-571e528e1ba9",
+			"id": "3f6be0da-34aa-428b-b2e6-41883f429387",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "b47c8333-3052-484e-ae0e-9cdfa64c76b6",
+			"id": "51020c4e-8125-46ca-bcc8-71b7319f3d7c",
 			"key": "reqBody",
 			"value": ""
 		}
