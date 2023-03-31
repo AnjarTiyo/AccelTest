@@ -424,7 +424,7 @@
 									"    pm.response.to.have.status(401);",
 									"});",
 									"",
-									"pm.test(\"Message contains\" + expectedMessage, function () {",
+									"pm.test(\"Message contains \" + expectedMessage, function () {",
 									"    pm.expect(pm.response.text()).to.include(expectedMessage);",
 									"});",
 									""
@@ -631,17 +631,17 @@
 	],
 	"variable": [
 		{
-			"id": "9ba380af-2206-4e13-ac26-4bdb79ad3eb7",
+			"id": "742abb02-3bcf-4521-b6d0-cef1f92e9668",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "57933822-c2f8-4398-a225-2ebda1bb20c6",
+			"id": "6495bd0b-3d85-4484-adbb-dcaae696fa86",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "9bd0505d-7005-4e81-bd27-d30fde0ba254",
+			"id": "ec941476-6e86-4461-804b-cee6adc94eac",
 			"key": "reqBody",
 			"value": ""
 		}
