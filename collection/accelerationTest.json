@@ -988,7 +988,7 @@
 			"name": "05-Logout",
 			"item": [
 				{
-					"name": "Login for Update Copy",
+					"name": "Login for Logout",
 					"event": [
 						{
 							"listen": "test",
@@ -1157,17 +1157,17 @@
 	],
 	"variable": [
 		{
-			"id": "fc222d6f-2ba0-4058-ac0f-837b06961ca6",
+			"id": "7273cb8f-4c09-4574-9189-3a5a51d7759b",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "2948525d-315f-4e75-85ee-372c4a5aee68",
+			"id": "383ba53b-7c3c-4073-8805-01847fa631ca",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "dcec7106-e503-418a-87e0-4e1faa0c4fa6",
+			"id": "a58e3196-877d-4bf7-8c24-20968506a0cb",
 			"key": "reqBody",
 			"value": ""
 		}
