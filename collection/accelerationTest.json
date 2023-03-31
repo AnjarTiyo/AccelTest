@@ -708,7 +708,44 @@
 					"response": []
 				}
 			],
-			"id": "8f5d001c-120a-4f88-a2f8-b860a6e90298"
+			"id": "8f5d001c-120a-4f88-a2f8-b860a6e90298",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "13a88249-a5fc-4f19-80ca-af618aba2c05",
+						"type": "text/javascript",
+						"exec": [
+							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
+							"",
+							"pm.sendRequest({",
+							"    url: url,",
+							"    method: 'POST',",
+							"    header: 'Content-Type:application/json',",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({ ",
+							"            username: pm.environment.get('registeredUsername'),",
+							"            password: \"password\"",
+							"            })",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.environment.set(\"sessionToken\", res.json().data.access_token.token);",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "357711b6-f6fe-4d90-9e70-23cac73c88b0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "05-Logout",
@@ -739,17 +776,17 @@
 	],
 	"variable": [
 		{
-			"id": "afbb9503-55a0-4bd6-81d0-f033e189cfcb",
+			"id": "72ef1160-817b-4798-8ae3-639ff660c635",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "d92577a5-06e0-40ed-a9f0-e04725f07f23",
+			"id": "4a5306c0-5506-4514-9223-606df2b53a6d",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "d8d62de6-d78f-4a33-a267-d93ade16aa77",
+			"id": "5bc86955-83a8-4a0d-80a2-97fdd4c2d489",
 			"key": "reqBody",
 			"value": ""
 		}
