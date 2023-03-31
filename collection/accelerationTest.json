@@ -997,7 +997,7 @@
 								"exec": [
 									"const testType = pm.iterationData.get(\"testType\");",
 									"const testCase = pm.iterationData.get(\"testCase\");",
-									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\")",
+									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\");",
 									"",
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1096,17 +1096,17 @@
 	],
 	"variable": [
 		{
-			"id": "7fee0af8-0c7a-4f13-9019-6d499d0fa127",
+			"id": "77c55777-6471-47f4-aebe-ede7892aa63e",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "32a774d9-6419-4284-a2d6-04f32a72fb6d",
+			"id": "21b47600-a4a4-4e70-bdf9-c11b20d0b52d",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "76e8a486-aff9-4b11-bfb8-046f1aa60fec",
+			"id": "6b50fe94-8e6e-45bd-8343-1dc23b16a743",
 			"key": "reqBody",
 			"value": ""
 		}
