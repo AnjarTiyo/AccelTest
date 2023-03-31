@@ -562,7 +562,7 @@
 			"name": "04-UpdateProfile",
 			"item": [
 				{
-					"name": "Registration Copy",
+					"name": "Registration for Update",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -1216,17 +1216,17 @@
 	],
 	"variable": [
 		{
-			"id": "cd5e9851-1114-4d50-a3dd-127da13ce21e",
+			"id": "587e6750-182c-4052-8335-c0f47a9dda33",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "75c7c9f8-8d21-436e-90dc-49db2d872831",
+			"id": "c5fbb269-9567-45d1-904c-25be723c8236",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "577feaeb-ddc7-4a2a-acf9-ada2a07d0fd6",
+			"id": "ccb97bd9-26f7-4e91-8af3-ff81b826f595",
 			"key": "reqBody",
 			"value": ""
 		}
