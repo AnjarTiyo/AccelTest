@@ -412,6 +412,8 @@
 								"exec": [
 									"console.log(\"Get User Profile with expired token\")",
 									"",
+									"console.log(pm.response.body())",
+									"",
 									"pm.test(\"Status code is 401\", function () {",
 									"    pm.response.to.have.status(401);",
 									"});",
@@ -613,17 +615,17 @@
 	],
 	"variable": [
 		{
-			"id": "5cf48b86-03c1-453e-9db1-205d4260fe68",
+			"id": "78e4f02e-3dcd-489a-bf30-6d645a8f9ed8",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "f079fc9d-9aaf-414b-aa3d-1d5e5684b695",
+			"id": "0b4c3e5b-f27b-4b46-b3ed-3f778bd29724",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "bbca7cad-2fd9-4795-979b-a20ed2a4a326",
+			"id": "8d66dcbd-5698-45ec-9cf6-d83bccbacfb7",
 			"key": "reqBody",
 			"value": ""
 		}
