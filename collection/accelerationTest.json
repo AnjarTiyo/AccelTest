@@ -380,7 +380,9 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									""
+									"pm.test(\"Status code name has string\", function () {",
+									"    pm.response.to.have.status(\"Created\");",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -616,17 +618,17 @@
 	],
 	"variable": [
 		{
-			"id": "84d76b2e-aaca-402e-819f-4ac7d4588c2a",
+			"id": "f01e8777-79f1-4f35-978e-c562d57659ff",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "ba97592c-bdd0-40fa-ae0c-9b3d04df0d39",
+			"id": "03109c49-4062-4b42-ae86-571e528e1ba9",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "032138c8-8d56-406e-845f-e196f877338e",
+			"id": "b47c8333-3052-484e-ae0e-9cdfa64c76b6",
 			"key": "reqBody",
 			"value": ""
 		}
