@@ -1013,6 +1013,9 @@
 									"    case \"activeSession\":",
 									"        pm.environment.set(\"session\", pm.environment.get(\"activeSession\"));",
 									"        break;",
+									"    case \"inactiveSession\":",
+									"        pm.environment.set(\"session\", pm.environment.get(\"inactiveSession\"));",
+									"        break;",
 									"}"
 								],
 								"type": "text/javascript"
@@ -1079,17 +1082,17 @@
 	],
 	"variable": [
 		{
-			"id": "8b723af0-1be0-40ff-aefc-2dd4d8f6ced5",
+			"id": "3365adf2-8449-4cd2-8679-3c27245397af",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "f66fb95b-0a93-4cd5-80c3-1690e8f92da2",
+			"id": "74a60a5c-5630-4f94-8dde-07fb61f04de3",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "79d3ed13-4a66-48a3-af61-b8ac400402eb",
+			"id": "24553a4d-7a20-4672-aa9b-4ffe4b26551a",
 			"key": "reqBody",
 			"value": ""
 		}
