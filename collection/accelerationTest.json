@@ -573,7 +573,9 @@
 									"        \"password\": password,",
 									"        \"email\": email,",
 									"        \"name\": name,",
-									"        \"asda\"",
+									"        \"gender\": gender,",
+									"        \"address\"saasd\" address,",
+									"",
 									"    };",
 									"}",
 									"",
@@ -692,17 +694,17 @@
 	],
 	"variable": [
 		{
-			"id": "1631d9b8-70de-48f1-b5ed-bf8d1457b128",
+			"id": "0bbe5a0e-9553-44d4-89bc-1788a6cc2df6",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "d2a2dcc5-446e-4df1-a204-932edbbcd1d1",
+			"id": "1e205a73-5f57-4658-814c-364575504cc3",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "1c028c33-01d0-4ae2-a544-51de0f1b1529",
+			"id": "b637e4d8-3642-4af0-ae52-904c8e37e67f",
 			"key": "reqBody",
 			"value": ""
 		}
