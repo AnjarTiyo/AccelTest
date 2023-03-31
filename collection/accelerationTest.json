@@ -263,7 +263,7 @@
 							"script": {
 								"id": "5ccae196-9de2-41cb-a982-10ae01b7202a",
 								"exec": [
-									"const username = pm.iterationData.get(\"username\");",
+									"const username = pm.environment.get(\"registeredUsername\");",
 									"const email = pm.iterationData.get(\"email\");",
 									"const password = pm.iterationData.get(\"password\");",
 									"const name = pm.iterationData.get(\"name\");",
@@ -869,17 +869,17 @@
 	],
 	"variable": [
 		{
-			"id": "37481ecb-4d87-4a27-b802-5b738a171cc7",
+			"id": "84603950-8291-46a8-accd-a9bac70cf64f",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "62bf0dc2-4b98-4f91-b33a-efdbfebf396c",
+			"id": "67cc06bc-0ca2-4265-9de0-180b93364cac",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "076ed26f-f227-4a66-a444-3f02df1cf3a4",
+			"id": "347a2a19-ab60-4e01-a04f-6433e291ce56",
 			"key": "reqBody",
 			"value": ""
 		}
