@@ -572,7 +572,8 @@
 									"        \"username\": username,",
 									"        \"password\": password,",
 									"        \"email\": email,",
-									"        \"name\": name",
+									"        \"name\": name,",
+									"        \"asda\"",
 									"    };",
 									"}",
 									"",
@@ -691,17 +692,17 @@
 	],
 	"variable": [
 		{
-			"id": "0eb73565-aa40-4e6e-a533-240586dacb64",
+			"id": "1631d9b8-70de-48f1-b5ed-bf8d1457b128",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "1385de58-663e-42bb-9a96-f3f4b0671f84",
+			"id": "d2a2dcc5-446e-4df1-a204-932edbbcd1d1",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "200ccb0c-fba8-40ed-8fce-1cb14c935936",
+			"id": "1c028c33-01d0-4ae2-a544-51de0f1b1529",
 			"key": "reqBody",
 			"value": ""
 		}
