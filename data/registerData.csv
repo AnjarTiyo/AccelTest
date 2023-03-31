@@ -1,0 +1,11 @@
+testCase,testType,authType,username,password,email,name,usernameStatus,passwordStatus,emailStatus,nameStatus,expectedStatusCode,responseErrorCode,expectedMessage
+Register with valid data,(+),Basic,{{$randomUserName}},password,{{$randomEmail}},{{$randomFirstName}} {{$randomLastName}},TRUE,TRUE,TRUE,TRUE,201,,Success
+Register with already registered username,(-),Basic,alreadyRegistered,password,{{$randomEmail}},{{$randomFirstName}} {{$randomLastName}},TRUE,TRUE,TRUE,TRUE,500,500,Username has already been taken
+Register with already registered email,(-),Basic,{{$randomUserName}},password,alreadyregistered@email.com,{{$randomFirstName}} {{$randomLastName}},TRUE,TRUE,TRUE,TRUE,500,500,
+Register with already registered name,(+),Basic,{{$randomUserName}},password,{{$randomEmail}},alreadyRegisteredName,TRUE,TRUE,TRUE,TRUE,201,,
+Register without authorization,(-),null,,,,,TRUE,TRUE,TRUE,TRUE,401,401,Unauthenticated
+Register without username,(-),Basic,,password,{{$randomEmail}},{{$randomFirstName}} {{$randomLastName}},FALSE,TRUE,TRUE,TRUE,422,422,is missing
+Register without password,(-),Basic,{{$randomUserName}},,{{$randomEmail}},{{$randomFirstName}} {{$randomLastName}},TRUE,FALSE,TRUE,TRUE,422,422,is missing
+Register without email,(-),Basic,{{$randomUserName}},password,,{{$randomFirstName}} {{$randomLastName}},TRUE,TRUE,FALSE,TRUE,422,422,is missing
+Register without name,(-),Basic,{{$randomUserName}},password,{{$randomEmail}},,TRUE,TRUE,TRUE,FALSE,422,422,is missing
+Register with invalid email format,(-),,{{$randomUserName}},password,invalid.email,{{$randomFirstName}} {{$randomLastName}},TRUE,TRUE,TRUE,TRUE,422,422,is missing
