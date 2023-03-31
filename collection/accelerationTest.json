@@ -701,7 +701,7 @@
 					"response": []
 				},
 				{
-					"name": "Login for Update",
+					"name": "Login Copy",
 					"event": [
 						{
 							"listen": "test",
@@ -761,7 +761,74 @@
 							"script": {
 								"id": "5ccae196-9de2-41cb-a982-10ae01b7202a",
 								"exec": [
-									""
+									"const username = pm.iterationData.get(\"username\");",
+									"const email = pm.iterationData.get(\"email\");",
+									"const password = pm.iterationData.get(\"password\");",
+									"const name = pm.iterationData.get(\"name\");",
+									"const authType = pm.iterationData.get(\"authType\");",
+									"const testType = pm.iterationData.get(\"testType\");",
+									"const usernameStatus = pm.iterationData.get(\"usernameStatus\");",
+									"const passwordStatus = pm.iterationData.get(\"passwordStatus\");",
+									"",
+									"",
+									"// function randomString(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'){",
+									"//     if (!minValue) {",
+									"//         minValue = 20;",
+									"//         maxValue = 20;",
+									"//     }",
+									"",
+									"//     if (!maxValue){",
+									"//         maxValue = minValue;",
+									"//     }",
+									"    ",
+									"//     let length = _.random(minValue, maxValue), randomString = \"\";",
+									"",
+									"//     for (let i = 0; i < length; i++)",
+									"//     randomString += dataSet.charAt(Math.floor(Math.random() * dataSet.length))",
+									"//     return randomString;",
+									"// }",
+									"",
+									"// if (username == \"{{$randomUserName}}\"){",
+									"//     pm.collectionVariables.set(\"username\", randomString());",
+									"// }",
+									"",
+									"// if (email == \"{{$randomEmail}}\"){",
+									"//     pm.collectionVariables.set(\"email\", randomString() + \"@email.com\");",
+									"// }",
+									"",
+									"// if (email == \"{{$randomName}}\"){",
+									"//     pm.collectionVariables.set(\"name\", randomString() + \" \" + randomString());",
+									"// }",
+									"",
+									"// if (authType == \"null\"){",
+									"//     pm.environment.set(\"usernameTahuBulat\", \"\");",
+									"//     pm.environment.set(\"passwordTahuBulat\", \"\");",
+									"// }else {",
+									"//     pm.environment.set(\"usernameTahuBulat\", \"tahubulat\");",
+									"//     pm.environment.set(\"passwordTahuBulat\", \"enaksekali\");",
+									"// }",
+									"",
+									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"    };",
+									"}",
+									"",
+									"else if(usernameStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"password\": password",
+									"    };",
+									"}",
+									"else if(passwordStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username",
+									"    };",
+									"}",
+									"",
+									"console.log(body);",
+									"",
+									"pm.collectionVariables.set(\"reqBody\", JSON.stringify(body));"
 								],
 								"type": "text/javascript"
 							}
@@ -1061,17 +1128,17 @@
 	],
 	"variable": [
 		{
-			"id": "7157105e-9729-4e48-9602-8c10c31c40d3",
+			"id": "cae89947-3015-4f64-a56c-c83809060744",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "522a1b19-c6f7-498f-be7f-4d81426a5c63",
+			"id": "ce01a6b0-a28d-4c80-96ee-99ce290ffc87",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "41d94462-fab4-4c4b-8c72-3031c752d2c3",
+			"id": "a67a63a7-b592-4271-a6ad-21943af915da",
 			"key": "reqBody",
 			"value": ""
 		}
