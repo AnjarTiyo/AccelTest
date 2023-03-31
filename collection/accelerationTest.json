@@ -624,9 +624,29 @@
 									"        \"username\": username,",
 									"        \"password\": password,",
 									"        \"email\": email,",
-									"        \"gender\": gender,",
+									"        \"name\": name,",
 									"        \"address\": address,",
 									"        \"phone\": phone",
+									"    };",
+									"}",
+									"else if(addressStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"        \"email\": email,",
+									"        \"name\": name,",
+									"        \"gender\": gender, ",
+									"        \"phone\": phone",
+									"    };",
+									"}",
+									"else if(phoneStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"        \"email\": email,",
+									"        \"name\": name,",
+									"        \"gender\": gender, ",
+									"        \"address\": address",
 									"    };",
 									"}",
 									"",
@@ -716,17 +736,17 @@
 	],
 	"variable": [
 		{
-			"id": "443d5cdc-239a-48e1-800f-d99fd60fae05",
+			"id": "8f5bb39b-3afc-4e54-b4af-e895b2fb5a5d",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "45b1caf1-c8a1-4a46-906b-a120dc2de0a1",
+			"id": "f5649c2d-b37b-4259-abcd-6e368a653a07",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "924aec3d-b402-4165-9e4f-4fe22c8cb630",
+			"id": "eb0e7205-6e01-40cf-a522-29e8f4bb69a3",
 			"key": "reqBody",
 			"value": ""
 		}
