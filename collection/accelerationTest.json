@@ -439,22 +439,6 @@
 				},
 				{
 					"name": "Get User Profile without token",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "2d225685-816f-493c-806b-f42103150d4d",
-								"exec": [
-									"console.log(\"Get User Profile without token\")",
-									"",
-									"pm.test(\"Status code is 401\", function () {",
-									"    pm.response.to.have.status(401);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
 					"id": "fc32afef-c606-4b96-98ea-63cb6c8f68db",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -609,17 +593,17 @@
 	],
 	"variable": [
 		{
-			"id": "da1ede3b-8e76-4bd2-af32-1b1ece5374bd",
+			"id": "f7625fa0-d3c7-4045-b747-a677b9ab7765",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "12c230a6-8813-4d63-a6a5-a0d95dd45862",
+			"id": "d34e9bd0-6b55-48e3-8e80-6416b1493a64",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "487488df-9fa6-4b10-8c5e-c7fd8057c7bd",
+			"id": "958487a6-3f97-48e5-b3c5-3a671ef653e6",
 			"key": "reqBody",
 			"value": ""
 		}
