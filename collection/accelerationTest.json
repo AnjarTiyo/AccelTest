@@ -997,7 +997,7 @@
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"",
-									"pm.environment.set(\"activeSession\", jsonData.data.access_token.token);"
+									"pm.environment.set(\"session\", jsonData.data.access_token.token);"
 								],
 								"type": "text/javascript"
 							}
@@ -1162,17 +1162,17 @@
 	],
 	"variable": [
 		{
-			"id": "fe319b87-020e-4e9c-bcce-e4f3e56c87dc",
+			"id": "30dcf418-e265-4cb6-ba18-11034bccad58",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "c4444b86-f5bd-4df6-af32-4ce44cdb8c00",
+			"id": "d673f2a1-afc5-4670-87cd-8c11cf3f9cbc",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "13b192cb-fd97-42fe-b017-62538af62e99",
+			"id": "b9f9afde-157b-4c42-8890-8384b33acddf",
 			"key": "reqBody",
 			"value": ""
 		}
