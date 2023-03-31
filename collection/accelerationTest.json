@@ -1008,6 +1008,8 @@
 									"    pm.test(\"Message is \" + expectedMessage, function () {",
 									"        pm.expect(pm.response.text()).to.include(expectedMessage);",
 									"    });",
+									"",
+									"    pm.environment.set(\"inactiveSession\", pm.environment.get(\"session\"))",
 									"}",
 									"",
 									"",
@@ -1099,17 +1101,17 @@
 	],
 	"variable": [
 		{
-			"id": "832b8d19-4822-48ed-b483-79009615a6cf",
+			"id": "2451189e-f347-4bb9-ae5e-9a92b510a52b",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "1a7c009b-7bf2-45f4-9a16-105c24a82029",
+			"id": "1b4580eb-b7dc-489a-9429-fea03d785f6d",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "b1076276-e122-4d1a-b521-7b9a14a52025",
+			"id": "8eaee38b-90ac-4cda-b38c-d0d52cc4ef68",
 			"key": "reqBody",
 			"value": ""
 		}
