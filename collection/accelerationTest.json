@@ -563,9 +563,9 @@
 									"const addressStatus = pm.iterationData.get(\"addressStatus\");",
 									"const phoneStatus = pm.iterationData.get(\"phoneStatus\");",
 									"",
-									"var gender = [\"male\", \"female\"]",
+									"var genderRand = [\"male\", \"female\"]",
 									"",
-									"pm.variables.set(\"randomGender\", gender[_.random(gender.length -1)]);",
+									"pm.variables.set(\"randomGender\", gender[_.random(genderRand.length -1)]);",
 									"",
 									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\" && emailStatus== \"TRUE\" && nameStatus== \"TRUE\" && genderStatus== \"TRUE\" && addressStatus== \"TRUE\" && phoneStatus== \"TRUE\"){",
 									"    var body = {",
@@ -739,17 +739,17 @@
 	],
 	"variable": [
 		{
-			"id": "37c23f45-beea-48a6-a3bf-58d90b678fe5",
+			"id": "8ff9904d-eb95-4d98-a427-a44c1da3db40",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "3b38ece5-9266-4113-8577-178af0fee435",
+			"id": "f23d04e4-7a62-4398-b785-488d9f7cadb4",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "091e6d87-f4b0-4169-9b4f-8e2e48f3643c",
+			"id": "9424be19-c260-4e29-a6f8-8494f0a76aca",
 			"key": "reqBody",
 			"value": ""
 		}
