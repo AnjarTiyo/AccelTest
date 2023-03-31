@@ -451,6 +451,8 @@
 									"",
 									"console.log(pm.response.body())",
 									"",
+									"console.log(pm.response.body())",
+									"",
 									"pm.test(\"Status code is 401\", function () {",
 									"    pm.response.to.have.status(401);",
 									"});"
@@ -613,17 +615,17 @@
 	],
 	"variable": [
 		{
-			"id": "d9012458-2db6-449b-8048-8a0ce9db9a79",
+			"id": "09f7432c-38c9-44f4-8d0c-146200f06d43",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "9f456d51-bab8-4c7c-91a7-5cdcd5fda3fc",
+			"id": "5aa54db5-1b76-4528-b77f-403501d10616",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "5a8a576a-bf8b-4664-9d9c-564abfcac448",
+			"id": "7277ad2b-2cf0-4ee2-b83e-6f29bbeeabf9",
 			"key": "reqBody",
 			"value": ""
 		}
