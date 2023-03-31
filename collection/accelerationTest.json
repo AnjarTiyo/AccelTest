@@ -1005,7 +1005,9 @@
 									"});",
 									"",
 									"if (testType == \"(+)\"){",
-									"",
+									"    pm.test(\"Body matches string\", function () {",
+									"        pm.expect(pm.response.text()).to.include(expectedMessage);",
+									"    });",
 									"}",
 									"",
 									"",
@@ -1097,17 +1099,17 @@
 	],
 	"variable": [
 		{
-			"id": "47ffb251-a40c-44dc-b836-111d690c6cf2",
+			"id": "477c7eca-6c2a-4ecf-b7ca-aa3b4de275ef",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "68478d6e-80b8-4a05-b0f1-1f646c775141",
+			"id": "64f9247d-2444-43e3-8c69-6ab7d1584e22",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "b33d2f94-81c6-4ce8-b226-f7f580e2a255",
+			"id": "6026fbe9-1e64-4f8e-92bf-8806de07447f",
 			"key": "reqBody",
 			"value": ""
 		}
