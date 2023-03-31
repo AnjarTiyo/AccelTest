@@ -550,7 +550,6 @@
 									"const email = pm.iterationData.get(\"email\");",
 									"const password = pm.iterationData.get(\"password\");",
 									"const name = pm.iterationData.get(\"name\");",
-									"const gender = gender[_.random(genderRand.length -1)];",
 									"const address = pm.iterationData.get(\"address\");",
 									"const phone = pm.iterationData.get(\"phone\");",
 									"const authType = pm.iterationData.get(\"authType\");",
@@ -564,6 +563,7 @@
 									"const phoneStatus = pm.iterationData.get(\"phoneStatus\");",
 									"",
 									"var genderRand = [\"male\", \"female\"]",
+									"const gender = gender[_.random(genderRand.length -1)];",
 									"",
 									"pm.environment.set(\"randomGender\", gender[_.random(genderRand.length -1)]);",
 									"",
@@ -777,17 +777,17 @@
 	],
 	"variable": [
 		{
-			"id": "b2306796-aebd-4c53-9522-ced606422ff8",
+			"id": "ca723a9f-4686-43e6-be08-12da1b26b095",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "bb64eb4a-d9f0-48cd-b567-83d26ea29d81",
+			"id": "85fef977-5159-4e5c-9a3e-b9cd7ae44dc1",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "262cefdf-9a95-4089-81ea-655ff1690c0d",
+			"id": "f329e788-b156-42c0-b0c4-a0047665b31b",
 			"key": "reqBody",
 			"value": ""
 		}
