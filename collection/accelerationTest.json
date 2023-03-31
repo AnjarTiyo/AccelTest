@@ -662,7 +662,7 @@
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"const testCase = pm.iterationData.get(\"testCase\");",
-									"const expectedStatusCode = pm.iterationData.get(expectedStatusCode);",
+									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\");",
 									"",
 									"console.log(testCase)",
 									"",
@@ -737,17 +737,17 @@
 	],
 	"variable": [
 		{
-			"id": "19716bf3-e70a-48ad-97c0-c11fc9da5871",
+			"id": "f6fbdf30-b8e5-4b1a-8bd6-b33aa731a404",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "2aae682f-b022-4f7e-a1d4-851cc393e7a0",
+			"id": "bd1caf37-c7a6-402c-8bd6-e56663eb8f15",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "3b0af528-fc33-469f-8fed-eab974d2d0c7",
+			"id": "6fb5b392-c673-4735-b7a0-1e28b97d9fde",
 			"key": "reqBody",
 			"value": ""
 		}
