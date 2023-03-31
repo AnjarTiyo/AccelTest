@@ -423,7 +423,33 @@
 					"response": []
 				}
 			],
-			"id": "bf239bd1-2d28-42d4-a24c-27b7ec744200"
+			"id": "bf239bd1-2d28-42d4-a24c-27b7ec744200",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "04caba3a-91db-46ce-8006-820c24c4adfc",
+						"type": "text/javascript",
+						"exec": [
+							"var url = pm.environment.get(\"baseUrl\")",
+							"",
+							"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
+							"    console.log(response.json());",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "50ba392c-d256-4a9d-8845-76d1c25f7914",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "04-UpdateProfile",
@@ -521,17 +547,17 @@
 	],
 	"variable": [
 		{
-			"id": "e2506027-1d47-4f17-b93c-07f644e96120",
+			"id": "e2f9a0aa-106a-464a-9e21-fb55c39a581c",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "eb71d6ed-6a7b-43ef-923c-0423166083e5",
+			"id": "d6867c7a-2e75-4147-b61e-d005e63c9e9f",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "186c9282-b077-494c-b60e-278536255b4a",
+			"id": "1060f9ef-4161-4a2a-9a67-b34fc461b470",
 			"key": "reqBody",
 			"value": ""
 		}
