@@ -667,7 +667,7 @@
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"",
-									"pm.environment.set(\"editedUsername\", jsonData.data.user.username)"
+									"pm.environment.set(\"editedUsername\", jsonData.data.user.username);"
 								],
 								"type": "text/javascript"
 							}
@@ -701,7 +701,7 @@
 					"response": []
 				},
 				{
-					"name": "Login Copy",
+					"name": "Login for Update",
 					"event": [
 						{
 							"listen": "test",
@@ -1128,17 +1128,17 @@
 	],
 	"variable": [
 		{
-			"id": "6552f33d-9013-4fae-ad06-0aa3002fe588",
+			"id": "8f0fd1ec-c967-403a-8176-d2a78e2fc48e",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "179b96e5-61e1-4426-a04b-48f05dca6768",
+			"id": "eff3a9ef-95e4-4692-a607-f4f1552ebc7d",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "0e006ba1-6faa-42f5-a0d6-69ab40ad8604",
+			"id": "a795bcb7-daa0-4787-9109-5c9ed47a2cb6",
 			"key": "reqBody",
 			"value": ""
 		}
