@@ -1128,17 +1128,17 @@
 	],
 	"variable": [
 		{
-			"id": "951c07c7-bf2f-456c-8df3-4f3a960919b9",
+			"id": "6588a245-f29f-406d-b7d0-ffe9b4631c1c",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "f494b051-55e8-4250-9440-691fdac026e3",
+			"id": "961c84f5-1687-4cdc-9cff-00421c4468d6",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "3108dafc-2a25-4027-b552-73cec2e5feb6",
+			"id": "aece0c90-b401-49c0-9efc-01a680043fa5",
 			"key": "reqBody",
 			"value": ""
 		}
