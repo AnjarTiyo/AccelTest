@@ -357,7 +357,60 @@
 					"response": []
 				}
 			],
-			"id": "67ee1eeb-872a-47f3-a338-76102b007150"
+			"id": "67ee1eeb-872a-47f3-a338-76102b007150",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "53c25ec6-810d-4f1c-a50c-3c3a53e4fcfa",
+						"type": "text/javascript",
+						"exec": [
+							"pm.sendRequest({",
+							"    url: registerUrl,",
+							"    method: 'POST',",
+							"    header: 'Content-Type:application/json',",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({ ",
+							"            username: \"{{$randomUserName}}\",",
+							"            password: \"password\",",
+							"            email: \"{{$randomEmail}}\",",
+							"            name: \"{{$randomFullName}}\"",
+							"            })",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.environment.set(\"registeredUsername\", res.json().data.user.username);",
+							"});",
+							"",
+							"",
+							"pm.sendRequest({",
+							"    url: url,",
+							"    method: 'POST',",
+							"    header: 'Content-Type:application/json',",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({ ",
+							"            username: pm.environment.get('editedUsername'),",
+							"            password: \"password\"",
+							"            })",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.environment.set(\"sessionToken\", res.json().data.access_token.token);",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "708f567b-8913-41b5-8332-0dcf698d317e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "03-GetUserProfile",
@@ -846,17 +899,17 @@
 	],
 	"variable": [
 		{
-			"id": "b06ce6ce-eb09-4c16-b71a-d7988611c26d",
+			"id": "df88d789-08e0-4e5a-a800-708f3755c771",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "e61c92e6-8c25-4d5f-89a0-94d8aef7b294",
+			"id": "bdb2fde0-0f93-4f35-b5aa-b0ad9292e9ac",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "e7bcfdb0-e27d-4fb8-95aa-b29e6b336187",
+			"id": "588fb8d4-7a4c-4203-b2c1-ad6f5424f1da",
 			"key": "reqBody",
 			"value": ""
 		}
