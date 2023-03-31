@@ -772,22 +772,59 @@
 					"response": []
 				}
 			],
-			"id": "2da55e82-ec4c-4003-adad-ec4910a22293"
+			"id": "2da55e82-ec4c-4003-adad-ec4910a22293",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "801b8f64-2c4f-4050-a4bd-a7eb7b5ad95d",
+						"type": "text/javascript",
+						"exec": [
+							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
+							"",
+							"pm.sendRequest({",
+							"    url: url,",
+							"    method: 'POST',",
+							"    header: 'Content-Type:application/json',",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({ ",
+							"            username: pm.environment.get('registeredUsername'),",
+							"            password: \"password\"",
+							"            })",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.environment.set(\"sessionToken\", res.json().data.access_token.token);",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "36e9a2bf-db68-4db7-9a29-c2cf7485d477",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "d880e2ab-407b-4518-beeb-ebcc315da606",
+			"id": "4c81bbd2-9be6-44db-b309-851a8ec51bf0",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "9d28302c-1c6a-4fde-bd0a-ed5f0e379f6e",
+			"id": "87b86929-27ac-4634-9261-8817084ed8b4",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "9f1e1a0f-8bcc-4336-b2fb-c3604a05f119",
+			"id": "342c9fd8-c923-467d-9a34-cfe6a475f4c5",
 			"key": "reqBody",
 			"value": ""
 		}
