@@ -550,6 +550,9 @@
 									"const email = pm.iterationData.get(\"email\");",
 									"const password = pm.iterationData.get(\"password\");",
 									"const name = pm.iterationData.get(\"name\");",
+									"const gender = pm.iterationData.get(\"gender\");",
+									"const address = pm.iterationData.get(\"address\");",
+									"const phone = pm.iterationData.get(\"phone\");",
 									"const authType = pm.iterationData.get(\"authType\");",
 									"const testType = pm.iterationData.get(\"testType\");",
 									"const usernameStatus = pm.iterationData.get(\"usernameStatus\");",
@@ -688,17 +691,17 @@
 	],
 	"variable": [
 		{
-			"id": "78b5b390-cf18-4914-9ffd-6ddd9a7416b0",
+			"id": "0eb73565-aa40-4e6e-a533-240586dacb64",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "25fe3509-ef71-40e8-82bc-97a906273867",
+			"id": "1385de58-663e-42bb-9a96-f3f4b0671f84",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "ae21c990-8439-44c8-b2c3-34296b0662fa",
+			"id": "200ccb0c-fba8-40ed-8fce-1cb14c935936",
 			"key": "reqBody",
 			"value": ""
 		}
