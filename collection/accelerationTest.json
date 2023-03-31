@@ -362,7 +362,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "9ad7f012-c418-4852-8364-516539d3d8a9",
+						"id": "7d075007-c791-4cd2-8233-40a2bc6d39b8",
 						"type": "text/javascript",
 						"exec": [
 							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
@@ -371,7 +371,7 @@
 							"pm.sendRequest({",
 							"    url: registerUrl,",
 							"    method: 'POST',",
-							"    header: 'Content-Type:application/json',",
+							"    header: 'Content-Type: application/json',",
 							"    header: 'Authorization: Basic dGFodWJ1bGF0OmVuYWtzZWthbGk=',",
 							"    body: {",
 							"        mode: 'raw',",
@@ -393,7 +393,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b23b4e92-bdcf-47e3-b8a0-9722fe3713da",
+						"id": "7c097da4-3890-4771-aa82-5fb5cbcc5fad",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -889,17 +889,17 @@
 	],
 	"variable": [
 		{
-			"id": "c6a5770b-7ad3-41f6-8cbd-90192da6d6e4",
+			"id": "f91f73e3-3fff-431e-9f49-7fd18aefbb0d",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "891538b7-46b1-47bf-b668-f2dcf705ba81",
+			"id": "5680a843-9e6a-4946-9a7c-3dd028750544",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "a2f3b8d2-cedc-4cc5-a93b-e9ee2eeb484c",
+			"id": "3c01d220-f44d-4230-b8e6-e5fc37e82d79",
 			"key": "reqBody",
 			"value": ""
 		}
