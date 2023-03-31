@@ -1079,56 +1079,17 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "ef6215f5-1f3d-430f-90ff-7ca8051db47b",
+						"id": "c643ef7b-7003-48d0-bbbc-b2b756e67beb",
 						"type": "text/javascript",
 						"exec": [
-							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
-							"var registerUrl = pm.environment.get(\"baseUrl\") + \"/api/v1/registration\";",
-							"",
-							"pm.sendRequest({",
-							"    url: registerUrl,",
-							"    method: 'POST',",
-							"    header: {",
-							"        'Content-Type': 'application/json',",
-							"        'Authorization': 'Basic dGFodWJ1bGF0OmVuYWtzZWthbGk='",
-							"    },",
-							"    body: {",
-							"        mode: 'raw',",
-							"        raw: { ",
-							"            username: \"{{$randomUserName}}\",",
-							"            password: \"password\",",
-							"            email: \"{{$randomEmail}}\",",
-							"            name: \"{{$randomFullName}}\"",
-							"            },",
-							"    }",
-							"}, function (err, res) {",
-							"    pm.environment.set(\"editedUsername\", res.json().data.user.username);",
-							"    console.log(res.json())",
-							"});",
-							"",
-							"",
-							"pm.sendRequest({",
-							"    url: url,",
-							"    method: 'POST',",
-							"    header: 'Content-Type:application/json',",
-							"    body: {",
-							"        mode: 'raw',",
-							"        raw: { ",
-							"            username: pm.environment.get('editedUsername'),",
-							"            password: \"password\"",
-							"            },",
-							"    }",
-							"}, function (err, res) {",
-							"    pm.environment.set(\"sessionToken\", res.json().data.access_token.token);",
-							"    console.log(res.json())",
-							"});"
+							""
 						]
 					}
 				},
 				{
 					"listen": "test",
 					"script": {
-						"id": "f3116c5e-9349-4950-a829-2bdf1650e30d",
+						"id": "a9efbdf1-65f6-43e7-8ca3-c95baa70c55b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1216,17 +1177,17 @@
 	],
 	"variable": [
 		{
-			"id": "587e6750-182c-4052-8335-c0f47a9dda33",
+			"id": "943164d2-ed4e-48bf-95d6-1fe4f15df2f9",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "c5fbb269-9567-45d1-904c-25be723c8236",
+			"id": "e5f93369-8fdd-46c7-87d7-aa8b2d44b756",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "ccb97bd9-26f7-4e91-8af3-ff81b826f595",
+			"id": "f5a62720-da7a-4953-8c05-bd17f60b1084",
 			"key": "reqBody",
 			"value": ""
 		}
