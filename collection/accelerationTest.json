@@ -398,6 +398,20 @@
 				},
 				{
 					"name": "Get User Profile with expired token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57714f1d-b2e8-4aca-9aa0-4f7c7191aaff",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "81eaef64-ae3e-4227-b744-624163681a30",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -572,17 +586,17 @@
 	],
 	"variable": [
 		{
-			"id": "79f057ad-ae96-4534-b344-23d3dfd0b3ab",
+			"id": "76452f18-c4a0-4d31-9d62-3b86a0bcfe63",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "82a495d0-add6-4a10-9be0-d765344700db",
+			"id": "b5bda3f8-54f3-4f47-a7fa-aab3d7f132b3",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "245c40a9-735f-4436-b2bd-bbc0c4984de6",
+			"id": "e3a84628-4b31-46d2-a0d2-9d2b080da495",
 			"key": "reqBody",
 			"value": ""
 		}
