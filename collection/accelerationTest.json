@@ -647,7 +647,7 @@
 								"id": "cb2fc51c-fa28-4fb3-ad3e-8d6c86192db6",
 								"exec": [
 									"var jsonData = pm.response.json();",
-									"const testCase = pm.iterationData",
+									"const testCase = pm.iterationData.get(\"testCase\")",
 									"",
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -720,17 +720,17 @@
 	],
 	"variable": [
 		{
-			"id": "52711f41-1b92-4dbf-9a91-623d6f7ac3fe",
+			"id": "79c8428e-2bca-4ee9-b1cd-f3044be0d59c",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "43bdd6a8-6043-4400-a23c-50976be405f7",
+			"id": "3ec90509-c3b7-4403-8d67-0ae775bbbea3",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "d73c07dd-c00d-4a73-bb56-2eb3aa62d0d0",
+			"id": "c2fedf0b-61c0-4628-a0b6-1d167f4919f6",
 			"key": "reqBody",
 			"value": ""
 		}
