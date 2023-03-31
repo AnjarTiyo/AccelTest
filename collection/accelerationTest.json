@@ -669,7 +669,7 @@
 									"console.log(testCase)",
 									"",
 									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
-									"    pm.response.to.have.status(200);",
+									"    pm.response.to.have.status(expectedStatusCode);",
 									"});",
 									"",
 									"pm.test(\"Username is updated\", function () {",
@@ -739,17 +739,17 @@
 	],
 	"variable": [
 		{
-			"id": "f6951b5e-1f6f-427f-8c6a-32381afea25f",
+			"id": "2d205d19-2ab2-4f51-82fb-164d70fbbfb3",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "d1b5290d-98a1-4756-bdc7-8eedc7a553d8",
+			"id": "56ec2eb0-9b5f-4f9c-a177-98480a319b02",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "6b4b8cde-00fd-4a77-a7fc-e189d8d37924",
+			"id": "69b79568-b1f5-45c6-8e81-4f2a6a2aec3c",
 			"key": "reqBody",
 			"value": ""
 		}
