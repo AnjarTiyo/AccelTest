@@ -679,7 +679,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"{{$randomUserName}}\",\n    \"name\": \"{{$randomFullName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"phone\": \"{{$randomPhoneNumber}}\",\n    \"gender\": \"{{randomGender}}\",\n    \"address\": \"{{$randomStreetAddress}}, {{$randomCity}}, {{$randomCountry}}\",\n    \"password\": \"password\"\n}",
+							"raw": "{{reqBody}}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -722,17 +722,17 @@
 	],
 	"variable": [
 		{
-			"id": "943855c8-0a91-4fc4-aafc-bc9642b3980f",
+			"id": "4118d073-59f8-4c0a-87b1-dadad34740bc",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "b4818619-3bba-40e0-9aba-dcf8b0cdc311",
+			"id": "b878dc0d-635c-4268-a33d-793ed1344f62",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "2402891f-68cb-4854-91c9-e112df7900d4",
+			"id": "b68d6a35-1330-4530-8235-045f83fb741c",
 			"key": "reqBody",
 			"value": ""
 		}
