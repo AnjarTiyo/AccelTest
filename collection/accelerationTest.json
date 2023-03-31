@@ -371,6 +371,7 @@
 								"id": "a203fdeb-48b7-4587-874c-50b8f0c1a210",
 								"exec": [
 									"var jsonData = pm.response.json();",
+									"const expectedMessage = \"Success\";",
 									"",
 									"console.log(\"Get User Profile with valid token\");",
 									"",
@@ -622,17 +623,17 @@
 	],
 	"variable": [
 		{
-			"id": "8e473d1f-eb47-497e-a58d-174b9812e09b",
+			"id": "bc7270c2-b864-4f54-a400-1d1849e1b080",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "93f65579-3095-4056-9bcc-03e652ef5c89",
+			"id": "8174a00a-7799-452a-8a98-0cd4390574ac",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "20c10921-4fef-4ad1-bdf9-8e902383d261",
+			"id": "937d0566-538e-4db8-ae40-b9c6cbe47715",
 			"key": "reqBody",
 			"value": ""
 		}
