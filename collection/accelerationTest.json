@@ -997,7 +997,11 @@
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"",
-									"pm.environment.set(\"activeSession\", jsonData.data.access_token.token);"
+									"pm.environment.set(\"activeSession\", jsonData.data.access_token.token);",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -1162,17 +1166,17 @@
 	],
 	"variable": [
 		{
-			"id": "622890a5-7a89-400a-a5e4-875c0b2091d7",
+			"id": "9e722451-e74b-4116-b74b-468442aaa97a",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "b9909e28-1a32-47f5-b9eb-e7e7f9f803f4",
+			"id": "754b0111-9826-426f-b185-36aa1f70d4cd",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "94594ea8-88a8-4ca4-9390-a0316027693b",
+			"id": "20d1f8d6-20d2-44e6-b3f3-6d99d6842250",
 			"key": "reqBody",
 			"value": ""
 		}
