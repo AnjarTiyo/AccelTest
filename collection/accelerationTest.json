@@ -710,7 +710,7 @@
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"",
-									"pm.environment.set(\"sessionToken\", jsonData)"
+									"pm.environment.set(\"sessionToken\", jsonData.data.access_token.token)"
 								],
 								"type": "text/javascript"
 							}
@@ -1020,17 +1020,17 @@
 	],
 	"variable": [
 		{
-			"id": "2ad81b83-7a3f-4022-89b0-28efcdd96cdb",
+			"id": "8100208a-8e79-430f-b559-3b6f8e29def2",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "2370e0b5-a789-4f1c-a5d6-d851cb81982e",
+			"id": "15425623-0845-421e-9742-bef6c1ef2b7e",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "203f2c26-abde-46b4-91f4-f6aa2feff899",
+			"id": "1141983d-4a91-46fb-b10d-edd4cd989833",
 			"key": "reqBody",
 			"value": ""
 		}
