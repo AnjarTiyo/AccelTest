@@ -668,7 +668,7 @@
 									"",
 									"console.log(testCase)",
 									"",
-									"pm.test(\"Status code is 200\", function () {",
+									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
@@ -739,17 +739,17 @@
 	],
 	"variable": [
 		{
-			"id": "68d778ab-ea94-4c1d-a74d-65e2656238d4",
+			"id": "f6951b5e-1f6f-427f-8c6a-32381afea25f",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "bafe698f-c047-4201-b394-1f550fbfd61f",
+			"id": "d1b5290d-98a1-4756-bdc7-8eedc7a553d8",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "bde367d9-1025-4291-9115-07e736beb811",
+			"id": "6b4b8cde-00fd-4a77-a7fc-e189d8d37924",
 			"key": "reqBody",
 			"value": ""
 		}
