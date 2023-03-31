@@ -665,9 +665,9 @@
 							"script": {
 								"id": "cbde2656-b88b-4027-be8d-d86b5c00b71d",
 								"exec": [
-									"// var jsonData = pm.response.json();",
+									"var jsonData = pm.response.json();",
 									"",
-									"// pm.environment.set(\"editedUsername\", jsonData)"
+									"pm.environment.set(\"editedUsername\", jsonData.data.user.username);"
 								],
 								"type": "text/javascript"
 							}
@@ -1128,17 +1128,17 @@
 	],
 	"variable": [
 		{
-			"id": "f00f66f8-1564-4cb0-a04d-c4088f0ada64",
+			"id": "23c43cfb-bdd8-47e3-b82e-19b25c145d0d",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "44e6d788-d751-4494-8d48-bb85ff4c9d7e",
+			"id": "2e76acac-14e6-4eed-8a1c-e8fd62e56fcc",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "eba2a71f-d87c-4488-9e19-06c801bdefc9",
+			"id": "f54d9a9b-e93f-4629-9eea-f9528cab30dc",
 			"key": "reqBody",
 			"value": ""
 		}
