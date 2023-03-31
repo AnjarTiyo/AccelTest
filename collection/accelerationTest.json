@@ -374,6 +374,8 @@
 									"",
 									"console.log(\"Get User Profile with valid token\");",
 									"",
+									"console.log(pm.response.body())",
+									"",
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});"
@@ -611,17 +613,17 @@
 	],
 	"variable": [
 		{
-			"id": "b3d8bb0a-dd2b-4ba7-b353-15345df41472",
+			"id": "d9012458-2db6-449b-8048-8a0ce9db9a79",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "fb4a8de7-f73b-42a8-8dab-f7074e682c99",
+			"id": "9f456d51-bab8-4c7c-91a7-5cdcd5fda3fc",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "23128a97-a7c4-445a-83fb-1ffce2a4cbe5",
+			"id": "5a8a576a-bf8b-4664-9d9c-564abfcac448",
 			"key": "reqBody",
 			"value": ""
 		}
