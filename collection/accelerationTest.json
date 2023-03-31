@@ -1069,6 +1069,9 @@
 									"    });",
 									"}",
 									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
+									"});",
 									"",
 									""
 								],
@@ -1158,17 +1161,17 @@
 	],
 	"variable": [
 		{
-			"id": "5ed07d08-87b1-4101-9dbd-9d856149faff",
+			"id": "07955102-3397-4f31-8c0e-96795bc5b20e",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "5b888a96-768d-44cb-9231-1c925fd44a07",
+			"id": "eb97fe11-f62e-49df-afb5-95ae4e0d8ded",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "49fe8898-a48d-4229-9b81-4603ddbb681b",
+			"id": "781510b3-313e-4536-a1ce-d0408762f778",
 			"key": "reqBody",
 			"value": ""
 		}
