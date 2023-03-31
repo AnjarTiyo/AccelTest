@@ -556,7 +556,7 @@
 									"const passwordStatus = pm.iterationData.get(\"passwordStatus\");",
 									"const emailStatus = pm.iterationData.get(\"emailStatus\");",
 									"const nameStatus = pm.iterationData.get(\"nameStatus\");",
-									"const genderStatus = pm.iterationData.get(\"genderStatus\")",
+									"const genderStatus = pm.iterationData.get(\"genderStatus\");",
 									"",
 									"var gender = [\"male\", \"female\"]",
 									"",
@@ -686,17 +686,17 @@
 	],
 	"variable": [
 		{
-			"id": "40e7e287-9355-42fd-84fc-ab64b24037c9",
+			"id": "0da18c1a-8f0a-4f6d-b149-c2af596318c7",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "c7d86144-3a99-404a-944c-3d893856fc0c",
+			"id": "3a045da6-1d11-4ae8-8a04-7667730bb107",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "6d1e1e8d-f9d2-4d24-a970-1682db08da90",
+			"id": "d75564ef-0a35-4a82-b764-05f40b960906",
 			"key": "reqBody",
 			"value": ""
 		}
