@@ -445,7 +445,7 @@
 							"script": {
 								"id": "2d225685-816f-493c-806b-f42103150d4d",
 								"exec": [
-									"console.log(\"Get User Profile with valid token\")"
+									"console.log(\"Get User Profile without token\")"
 								],
 								"type": "text/javascript"
 							}
@@ -605,17 +605,17 @@
 	],
 	"variable": [
 		{
-			"id": "3721a0c1-a870-4c3f-8c39-935fa7f17ce3",
+			"id": "a25ab5d2-3c27-4743-92e6-252cf2ac39ac",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "6c7cab6a-f60d-498f-9b14-d07d0aa66bf4",
+			"id": "58f47f6d-4ca4-4c57-ad37-6451393ae9bc",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "325cfc44-dab8-43ce-be97-fd16d070f494",
+			"id": "25770ddd-2d25-48ac-804d-82113c98bd4d",
 			"key": "reqBody",
 			"value": ""
 		}
