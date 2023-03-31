@@ -737,7 +737,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "271f178d-b9c4-4a9b-b6a0-e33c4e0a3eb3",
+						"id": "72e10f79-909f-432e-86c6-7899e73f5cb8",
 						"type": "text/javascript",
 						"exec": [
 							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
@@ -746,7 +746,10 @@
 							"pm.sendRequest({",
 							"    url: registerUrl,",
 							"    method: 'POST',",
-							"    header: 'Content-Type:application/json',",
+							"    header: {",
+							"        'Content-Type': 'application/json',",
+							"        'Authorization': 'Basic dGFodWJ1bGF0OmVuYWtzZWthbGk='",
+							"    },",
 							"    body: {",
 							"        mode: 'raw',",
 							"        raw: JSON.stringify({ ",
@@ -782,7 +785,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "bcaf39cf-1db1-4d42-9a8a-d89ca0d257e7",
+						"id": "689d6ea2-7c0d-4586-ba41-fd2dca2781de",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -870,17 +873,17 @@
 	],
 	"variable": [
 		{
-			"id": "af4dd98a-acca-48aa-af90-a16679074f0b",
+			"id": "8c5987df-5ef2-4d6d-bb56-79441bd1878a",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "a6bbc4fc-d975-4975-89f5-871f31aab7bb",
+			"id": "daf1677a-d9b3-4d41-8a0f-ab03aff0e9eb",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "ad14ef68-c1ce-4d5d-8d7b-c43a45a456b1",
+			"id": "89fac0b7-24a6-4171-8a75-1c899bd96ad6",
 			"key": "reqBody",
 			"value": ""
 		}
