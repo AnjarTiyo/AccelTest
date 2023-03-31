@@ -776,7 +776,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\" : \"{{editedUsername\"\n}",
+							"raw": "{\n    \"username\" : \"{{editedUsername}}\",\n    \"password\" : \"password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1061,17 +1061,17 @@
 	],
 	"variable": [
 		{
-			"id": "b01d856b-b50d-4375-b7f2-f2422c5be07e",
+			"id": "069c61e6-efac-49d3-a23e-dbe6886978a9",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "0488c5a7-ca7a-4ac5-aa32-249de62cb2fd",
+			"id": "d49ee034-c241-4263-86bf-f09ecf786c1e",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "74b56387-b1b8-48da-9459-ffed7843f505",
+			"id": "7d4ead15-ac6b-4bfb-90c1-a451b3a6f63b",
 			"key": "reqBody",
 			"value": ""
 		}
