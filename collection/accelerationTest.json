@@ -753,6 +753,20 @@
 			"item": [
 				{
 					"name": "Logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "60c820d8-02e1-446b-aa9f-e14e096e0931",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "3bf31adb-a044-47d5-953a-43fc5c076e03",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -813,17 +827,17 @@
 	],
 	"variable": [
 		{
-			"id": "5d2c124a-cb34-4ced-833a-1b3d71a3293c",
+			"id": "616996ea-4f7f-457b-8c46-34a1efdcd967",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "f2fbdd07-38fe-43da-90cf-435d4985a358",
+			"id": "e5fa0813-7298-47f7-947c-9ec95f1c16cc",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "96900dfa-0cdd-4593-91f7-3a3d7502fd6b",
+			"id": "b88760a3-1f41-4719-a47f-400dc1304f42",
 			"key": "reqBody",
 			"value": ""
 		}
