@@ -561,15 +561,6 @@
 									"",
 									"pm.variables.set(\"randomGender\", gender[_.random(gender.length -1)]);",
 									"",
-									"",
-									"if (authType == \"null\"){",
-									"    pm.environment.set(\"usernameTahuBulat\", \"\");",
-									"    pm.environment.set(\"passwordTahuBulat\", \"\");",
-									"}else {",
-									"    pm.environment.set(\"usernameTahuBulat\", \"tahubulat\");",
-									"    pm.environment.set(\"passwordTahuBulat\", \"enaksekali\");",
-									"}",
-									"",
 									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\" && emailStatus== \"TRUE\" && nameStatus== \"TRUE\"){",
 									"    var body = {",
 									"        \"username\": username,",
@@ -694,17 +685,17 @@
 	],
 	"variable": [
 		{
-			"id": "c1dfb71d-b4f5-4e7e-875c-371928da898f",
+			"id": "88c28631-908f-4a32-a2d6-d5452122abff",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "bba6ebc2-a6c7-4d4e-8981-efc46cd58dc4",
+			"id": "b1676163-bc89-4f5e-b743-a7ad20046f8e",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "c012e4d6-752a-41ca-ad24-6a279550425e",
+			"id": "a310f30b-eb21-4ed9-a687-41415d45022f",
 			"key": "reqBody",
 			"value": ""
 		}
