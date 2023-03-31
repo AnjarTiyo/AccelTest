@@ -1007,7 +1007,12 @@
 							"script": {
 								"id": "beb61b02-a7e4-4fd5-b99a-ef06bf89fe47",
 								"exec": [
-									"var session = pm.iterationData.get(\"authType\")"
+									"const s = pm.iterationData.get(\"authType\")",
+									"",
+									"switch (s){",
+									"    case \"activeSession\":",
+									"        pm.environment.set(\"session\", pm.environment.get(\"activeSession\"))",
+									"}"
 								],
 								"type": "text/javascript"
 							}
@@ -1073,17 +1078,17 @@
 	],
 	"variable": [
 		{
-			"id": "0dc3eca5-fc13-4a24-9203-65e7c07a3201",
+			"id": "b0ac099a-fd5c-4fc9-8591-8eb632881718",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "a044cc28-8a9e-48f0-b4a4-809ad7567af7",
+			"id": "c1bf1cc4-76ce-46a7-b925-b944e220c02b",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "25de6f4b-89f7-4f07-bbf2-82b23eb8b7f5",
+			"id": "30dcb8e2-396a-4e57-9987-0c014a1996dd",
 			"key": "reqBody",
 			"value": ""
 		}
