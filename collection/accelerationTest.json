@@ -565,7 +565,7 @@
 									"",
 									"var genderRand = [\"male\", \"female\"]",
 									"",
-									"pm.collectionVariables.set(\"randomGender\", gender[_.random(genderRand.length -1)]);",
+									"pm.environment.set(\"randomGender\", gender[_.random(genderRand.length -1)]);",
 									"",
 									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\" && emailStatus== \"TRUE\" && nameStatus== \"TRUE\" && genderStatus== \"TRUE\" && addressStatus== \"TRUE\" && phoneStatus== \"TRUE\"){",
 									"    var body = {",
@@ -775,17 +775,17 @@
 	],
 	"variable": [
 		{
-			"id": "ff313ae3-4165-4995-aedc-a4f36f92f106",
+			"id": "714a7e2b-79b8-4d11-8db6-7cdf52f9caa0",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "fb9ad051-8eb2-44d0-bb54-8167698df73a",
+			"id": "ee5c438f-b940-486f-8556-786a6bfd373f",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "be835614-909a-4a79-a7a3-409c0e8499f1",
+			"id": "d8b7c458-58ca-4eca-872e-af92f476126f",
 			"key": "reqBody",
 			"value": ""
 		}
