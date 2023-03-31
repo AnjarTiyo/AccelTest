@@ -998,7 +998,8 @@
 									"const testType = pm.iterationData.get(\"testType\");",
 									"const testCase = pm.iterationData.get(\"testCase\");",
 									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\");",
-									"const expectedMessage = pm.iterationData.get(\"expectedMessage\")",
+									"const expectedMessage = pm.iterationData.get(\"expectedMessage\");",
+									"var jsonData = pm.response.json();",
 									"",
 									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
 									"    pm.response.to.have.status(expectedStatusCode);",
@@ -1011,7 +1012,11 @@
 									"",
 									"    pm.environment.set(\"inactiveSession\", pm.environment.get(\"session\"));",
 									"}else {",
-									"    ",
+									"",
+									"    pm.test(\"Your test name\", function () {",
+									"        ",
+									"        pm.expect(jsonData.value).to.eql(100);",
+									"    });",
 									"}",
 									"",
 									"",
@@ -1103,17 +1108,17 @@
 	],
 	"variable": [
 		{
-			"id": "27db2372-7779-4c5c-adb7-a882e921b01b",
+			"id": "fbdad1b3-e3e9-433a-ad16-5d0e7148d7ab",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "ea281541-0f3c-48d1-bf35-d61ea156391a",
+			"id": "62455f2e-ac88-465e-bfa3-59368a6912a5",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "1cefeb04-d013-4c94-a400-6933591a8aeb",
+			"id": "1e1b0e47-2673-4fb3-bad8-0a68478bbd43",
 			"key": "reqBody",
 			"value": ""
 		}
