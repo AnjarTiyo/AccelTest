@@ -550,7 +550,7 @@
 									"const email = pm.iterationData.get(\"email\");",
 									"const password = pm.iterationData.get(\"password\");",
 									"const name = pm.iterationData.get(\"name\");",
-									"const gender = pm.iterationData.get(\"gender\");",
+									"const gender = gender[_.random(genderRand.length -1)];",
 									"const address = pm.iterationData.get(\"address\");",
 									"const phone = pm.iterationData.get(\"phone\");",
 									"const authType = pm.iterationData.get(\"authType\");",
@@ -777,17 +777,17 @@
 	],
 	"variable": [
 		{
-			"id": "181704de-ce53-4a83-a5fe-054bb588f162",
+			"id": "b2306796-aebd-4c53-9522-ced606422ff8",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "d6979b12-451d-4b26-a3db-71001379ae30",
+			"id": "bb64eb4a-d9f0-48cd-b567-83d26ea29d81",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "a1a1be38-e681-4e06-9e8d-ef60bdee33ea",
+			"id": "262cefdf-9a95-4089-81ea-655ff1690c0d",
 			"key": "reqBody",
 			"value": ""
 		}
