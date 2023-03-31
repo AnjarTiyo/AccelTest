@@ -777,17 +777,17 @@
 	],
 	"variable": [
 		{
-			"id": "cb6a97fa-a4eb-4e15-9a84-92b9d0801022",
+			"id": "d880e2ab-407b-4518-beeb-ebcc315da606",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "41271f2f-2501-45c7-a53b-38cd4d4400de",
+			"id": "9d28302c-1c6a-4fde-bd0a-ed5f0e379f6e",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "f7d724a3-3705-4a4c-8029-55c56f83c615",
+			"id": "9f1e1a0f-8bcc-4336-b2fb-c3604a05f119",
 			"key": "reqBody",
 			"value": ""
 		}
