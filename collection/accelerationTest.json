@@ -1009,7 +1009,7 @@
 									"        pm.expect(pm.response.text()).to.include(expectedMessage);",
 									"    });",
 									"",
-									"    pm.environment.set(\"inactiveSession\", pm.environment.get(\"session\"))",
+									"    pm.environment.set(\"inactiveSession\", pm.environment.get(\"session\"));",
 									"}",
 									"",
 									"",
@@ -1101,17 +1101,17 @@
 	],
 	"variable": [
 		{
-			"id": "2451189e-f347-4bb9-ae5e-9a92b510a52b",
+			"id": "e9b797a5-e784-46ff-ab32-7d428c03fe77",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "1b4580eb-b7dc-489a-9429-fea03d785f6d",
+			"id": "08c1c4bd-3356-4cf0-85a4-cc0771b17c1b",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "8eaee38b-90ac-4cda-b38c-d0d52cc4ef68",
+			"id": "ec53abc8-9f62-4a85-a63e-a2f8deb73b39",
 			"key": "reqBody",
 			"value": ""
 		}
