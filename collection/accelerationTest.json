@@ -666,7 +666,7 @@
 									"",
 									"console.log(testCase)",
 									"",
-									"console.log(pm.response.json())",
+									"console.log(pm.response.json());",
 									"",
 									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
 									"    pm.response.to.have.status(expectedStatusCode);",
@@ -739,17 +739,17 @@
 	],
 	"variable": [
 		{
-			"id": "ab8e3d79-cf1b-4d3f-a86c-44ba0d071c84",
+			"id": "afbb9503-55a0-4bd6-81d0-f033e189cfcb",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "0d0f7200-fa37-4e1b-b85a-0b9bcc10a59a",
+			"id": "d92577a5-06e0-40ed-a9f0-e04725f07f23",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "9e0e94da-b06c-49b8-a5bc-2472ff28cbd6",
+			"id": "d8d62de6-d78f-4a33-a267-d93ade16aa77",
 			"key": "reqBody",
 			"value": ""
 		}
