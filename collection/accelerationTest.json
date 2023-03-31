@@ -619,6 +619,16 @@
 									"        \"phone\": phone",
 									"    };",
 									"}",
+									"else if(genderStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"        \"email\": email,",
+									"        \"gender\": gender,",
+									"        \"address\": address,",
+									"        \"phone\": phone",
+									"    };",
+									"}",
 									"",
 									"pm.collectionVariables.set(\"reqBody\", JSON.stringify(body));"
 								],
@@ -706,17 +716,17 @@
 	],
 	"variable": [
 		{
-			"id": "6c6ef8a3-6c66-4b70-b2da-a7aeb77bbaea",
+			"id": "443d5cdc-239a-48e1-800f-d99fd60fae05",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "d56c627e-3d7b-48da-8237-4265ae6cfeef",
+			"id": "45b1caf1-c8a1-4a46-906b-a120dc2de0a1",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "874af9c0-ed39-4dc2-a021-936ffe5cb31a",
+			"id": "924aec3d-b402-4165-9e4f-4fe22c8cb630",
 			"key": "reqBody",
 			"value": ""
 		}
