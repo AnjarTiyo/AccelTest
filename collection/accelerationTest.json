@@ -469,7 +469,7 @@
 									"    pm.response.to.have.status(401);",
 									"});",
 									"",
-									"pm.test(\"Message contains\" + expectedMessage, function () {",
+									"pm.test(\"Message contains \" + expectedMessage, function () {",
 									"    pm.response.to.have.status(expectedMessage);",
 									"});"
 								],
@@ -631,17 +631,17 @@
 	],
 	"variable": [
 		{
-			"id": "742abb02-3bcf-4521-b6d0-cef1f92e9668",
+			"id": "36f77110-1252-41ee-a621-b79991bde6f0",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "6495bd0b-3d85-4484-adbb-dcaae696fa86",
+			"id": "7ef251b2-d383-4a88-8e14-c3d711c344c5",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "ec941476-6e86-4461-804b-cee6adc94eac",
+			"id": "2224d4c9-a77d-4216-90ae-f0c210795da3",
 			"key": "reqBody",
 			"value": ""
 		}
