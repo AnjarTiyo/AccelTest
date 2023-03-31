@@ -593,7 +593,10 @@
 									"    var body = {",
 									"        \"username\": username,",
 									"        \"email\": email,",
-									"        \"name\": name",
+									"        \"name\": name,",
+									"        \"gender\": gender,",
+									"        \"address\": address,",
+									"        \"phone\": phone",
 									"    };",
 									"}",
 									"else if(emailStatus == \"FALSE\"){",
@@ -697,17 +700,17 @@
 	],
 	"variable": [
 		{
-			"id": "c809235f-f0ec-483b-8117-ac7bc57d4605",
+			"id": "0dac9645-15b9-439c-bcc0-b32850652cd8",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "3e90ae33-9bb5-43dd-a665-d6d70ef70cf4",
+			"id": "47ceb069-c746-43e5-a583-6a6bcc5b7737",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "9d4a7549-7f22-416f-acb8-4b31c415b8d6",
+			"id": "0b57997c-b0c9-4a7c-982c-68274f798662",
 			"key": "reqBody",
 			"value": ""
 		}
