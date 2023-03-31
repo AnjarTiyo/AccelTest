@@ -558,6 +558,7 @@
 									"const nameStatus = pm.iterationData.get(\"nameStatus\");",
 									"const genderStatus = pm.iterationData.get(\"genderStatus\");",
 									"const addressStatus = pm.iterationData.get(\"addressStatus\");",
+									"const phoneStatus = pm.iterationData.get(\"phoneStatus\");",
 									"",
 									"var gender = [\"male\", \"female\"]",
 									"",
@@ -687,17 +688,17 @@
 	],
 	"variable": [
 		{
-			"id": "f28c6c58-9a98-4769-9852-20b2b42f25f2",
+			"id": "78b5b390-cf18-4914-9ffd-6ddd9a7416b0",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "d684cfbc-690e-4387-be2f-29789a03723b",
+			"id": "25fe3509-ef71-40e8-82bc-97a906273867",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "03426509-576e-4ffb-8932-b5346fca1265",
+			"id": "ae21c990-8439-44c8-b2c3-34296b0662fa",
 			"key": "reqBody",
 			"value": ""
 		}
