@@ -583,7 +583,10 @@
 									"    var body = {",
 									"        \"password\": password,",
 									"        \"email\": email,",
-									"        \"name\": name",
+									"        \"name\": name,",
+									"        \"gender\": gender,",
+									"        \"address\": address,",
+									"        \"phone\": phone",
 									"    };",
 									"}",
 									"else if(passwordStatus == \"FALSE\"){",
@@ -694,17 +697,17 @@
 	],
 	"variable": [
 		{
-			"id": "dc16dcab-a1e3-4cdf-87c0-65b71eb5f3fd",
+			"id": "c809235f-f0ec-483b-8117-ac7bc57d4605",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "39214df0-ec29-44b7-a155-7d5c68cb9317",
+			"id": "3e90ae33-9bb5-43dd-a665-d6d70ef70cf4",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "a263dc85-e272-45f4-938d-7ad160fce80f",
+			"id": "9d4a7549-7f22-416f-acb8-4b31c415b8d6",
 			"key": "reqBody",
 			"value": ""
 		}
