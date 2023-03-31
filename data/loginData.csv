@@ -1,0 +1,10 @@
+testCase,testType,authType,username,password,usernameStatus,passwordStatus,expectedStatusCode,responseErrorCode,expectedMessage
+Login with valid credentials,(+),,{{registeredUsername}},password,TRUE,TRUE,201,,Success
+Login with invalid username,(-),,invalid,password,TRUE,TRUE,401,401,Invalid username / password combination
+Login with invalid password,,,{{registeredUsername}},invalid,TRUE,TRUE,401,401,Invalid username / password combination
+Login with blank username,,,,password,TRUE,TRUE,422,422,Username cannot be blank
+Login with blank password,,,{{registeredUsername}},,TRUE,TRUE,422,422,Password cannot be blank
+Login with blank username and password,,,,,TRUE,TRUE,422,422,Username / Password cannot be blank
+Login without username,,,,password,FALSE,TRUE,422,422,is missing
+Login without password,,,{{registeredUsername}},,TRUE,FALSE,422,422,is missing
+Login without username and password,,,,,FALSE,FALSE,422,422,is missing
