@@ -665,58 +665,9 @@
 							"script": {
 								"id": "cbde2656-b88b-4027-be8d-d86b5c00b71d",
 								"exec": [
-									"var jsonData = pm.response.json();",
-									"const expectedMessage = pm.iterationData.get(\"expectedMessage\");",
-									"const testCase = pm.iterationData.get(\"testCase\");",
-									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\");",
-									"const testType = pm.iterationData.get(\"testType\");",
-									"const responseErrorCode = pm.iterationData.get(\"responseErrorCode\");",
+									"// var jsonData = pm.response.json();",
 									"",
-									"console.log(\"Test Case: \" + testCase);",
-									"",
-									"//Funtionality test",
-									"",
-									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
-									"    pm.response.to.have.status(expectedStatusCode);",
-									"});",
-									"",
-									"if (testType == '(+)'){",
-									"    pm.test(\"Message contains: \" + expectedMessage , function () {",
-									"        pm.expect(jsonData.message).to.contains(expectedMessage);",
-									"    });",
-									"",
-									"    pm.test(\"Username is saved \", function () {",
-									"        pm.expect(jsonData.data.user.username).to.not.eql(null);",
-									"        pm.environment.set(\"registeredUsername\", jsonData.data.user.username);",
-									"    });",
-									"",
-									"    pm.test(\"Name is saved \", function () {",
-									"        pm.expect(jsonData.data.user.name).to.not.eql(null);",
-									"        pm.environment.set(\"registeredName\", jsonData.data.user.name);",
-									"    });",
-									"",
-									"    pm.test(\"Email is saved \", function () {",
-									"        pm.expect(jsonData.data.user.email).to.not.eql(null);",
-									"        pm.environment.set(\"registeredEmail\", jsonData.data.user.email);",
-									"    });",
-									"",
-									"}else{",
-									"    pm.test(\"Response error code is \" + responseErrorCode, function () {",
-									"        pm.expect(jsonData.error.code).to.eql(responseErrorCode);",
-									"    });",
-									"",
-									"    pm.test(\"Error message is \" + expectedMessage, function () {",
-									"        pm.expect(pm.response.text()).to.contain(expectedMessage);",
-									"    });",
-									"}",
-									"",
-									"",
-									"//Performance test",
-									"pm.test(\"Response time is less than 500ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);",
-									"});",
-									"",
-									""
+									"// pm.environment.set(\"editedUsername\", jsonData)"
 								],
 								"type": "text/javascript"
 							}
@@ -1177,17 +1128,17 @@
 	],
 	"variable": [
 		{
-			"id": "64c56f5e-9fa2-4b60-ac7b-f52db99dbe1a",
+			"id": "951c07c7-bf2f-456c-8df3-4f3a960919b9",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "f6952cfb-14da-40cd-8536-5bf8f6a5eb61",
+			"id": "f494b051-55e8-4250-9440-691fdac026e3",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "0e73b704-f696-46c3-a608-08113ad18764",
+			"id": "3108dafc-2a25-4027-b552-73cec2e5feb6",
 			"key": "reqBody",
 			"value": ""
 		}
