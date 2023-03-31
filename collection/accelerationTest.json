@@ -408,9 +408,12 @@
 							"script": {
 								"id": "57714f1d-b2e8-4aca-9aa0-4f7c7191aaff",
 								"exec": [
+									"console.log(\"Get User Profile with valid token\")",
+									"",
 									"pm.test(\"Status code is 401\", function () {",
 									"    pm.response.to.have.status(401);",
-									"});"
+									"});",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -590,17 +593,17 @@
 	],
 	"variable": [
 		{
-			"id": "829c1a0f-35c0-455e-b4b8-5d811f4951bf",
+			"id": "21eee9ad-a697-4fb9-864e-dda017dee22c",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "e9e32ade-a8ea-4cb7-80b5-6204c248b7ee",
+			"id": "469984a4-3ad3-4aa6-a52a-56dac0791b27",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "6090b8b9-affc-4fe9-bc9c-2b33a9c91d1b",
+			"id": "4624f294-61e2-4c73-b1df-162f35840516",
 			"key": "reqBody",
 			"value": ""
 		}
