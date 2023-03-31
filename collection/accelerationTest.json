@@ -574,8 +574,8 @@
 									"        \"email\": email,",
 									"        \"name\": name,",
 									"        \"gender\": gender,",
-									"        \"address\"saasd\" address,",
-									"",
+									"        \"address\": address,",
+									"        \"phone\": phone",
 									"    };",
 									"}",
 									"",
@@ -694,17 +694,17 @@
 	],
 	"variable": [
 		{
-			"id": "0bbe5a0e-9553-44d4-89bc-1788a6cc2df6",
+			"id": "d3a4f8e9-8115-4e00-80ca-dc4347b33279",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "1e205a73-5f57-4658-814c-364575504cc3",
+			"id": "242ba4e8-cf46-401e-b9bf-dee8cb27d6c4",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "b637e4d8-3642-4af0-ae52-904c8e37e67f",
+			"id": "49121eab-4db7-41fa-9203-eb96b9a672e9",
 			"key": "reqBody",
 			"value": ""
 		}
