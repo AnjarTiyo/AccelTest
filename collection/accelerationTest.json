@@ -418,6 +418,8 @@
 									"",
 									"console.log(pm.response.json());",
 									"",
+									"const expectedMessage = \"Unauthorized\";",
+									"",
 									"pm.test(\"Status code is 401\", function () {",
 									"    pm.response.to.have.status(401);",
 									"});",
@@ -628,17 +630,17 @@
 	],
 	"variable": [
 		{
-			"id": "92891924-7c39-4481-b994-df03b35f5aff",
+			"id": "86dc33ad-113d-4ced-a781-8a7e3b770aa7",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "d6f2cf72-a957-413a-aa01-5f2293e6c037",
+			"id": "8b8797a6-384d-4abe-a2be-ca173d892abd",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "6c066aab-a52b-4337-ae97-4a24b91bf3da",
+			"id": "da0305de-d8cc-4dd1-925f-e156537b5bf6",
 			"key": "reqBody",
 			"value": ""
 		}
