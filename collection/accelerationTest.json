@@ -1000,7 +1000,7 @@
 									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\");",
 									"",
 									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
-									"    pm.response.to.have.status(200);",
+									"    pm.response.to.have.status(expectedStatusCode);",
 									"});",
 									"",
 									"if (testType == \"(+)\"){",
@@ -1096,17 +1096,17 @@
 	],
 	"variable": [
 		{
-			"id": "f8cdd310-2dd8-4b99-987f-1cc4f2086c37",
+			"id": "91d45488-a364-485a-8e7c-c73ede8d52ac",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "fb4d401f-70b0-44f8-9f06-de248c8b4a7b",
+			"id": "10aca120-d99c-46e1-8316-4aca06294a42",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "61496afd-1bca-4b3c-9b69-afb5a436b8bc",
+			"id": "3f83fa47-e75e-42d8-bd7d-d7f5fc88b748",
 			"key": "reqBody",
 			"value": ""
 		}
