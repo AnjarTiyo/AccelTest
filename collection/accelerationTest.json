@@ -428,10 +428,10 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "c9946be5-6f11-49a9-b9f3-448b834e2833",
+						"id": "52de5f1f-6f2d-4974-90aa-8965dcbd2bbc",
 						"type": "text/javascript",
 						"exec": [
-							"var url = pm.environment.get(\"baseUrl\") + ",
+							"var url = pm.environment.get(\"baseUrl\") + \"/api/v1/auth\";",
 							"",
 							"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
 							"    console.log(response.json());",
@@ -442,7 +442,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "af450aca-47d4-4c2f-8f1f-4cd79d6c1bcd",
+						"id": "f823b594-5564-4a6c-adf2-b89d74c9adee",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -547,17 +547,17 @@
 	],
 	"variable": [
 		{
-			"id": "6b1dca54-1342-437a-9a40-b4486282891c",
+			"id": "5cb9e160-6b4b-44c0-8e8a-1728fc4e21aa",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "288d1280-54de-44eb-9c57-4de5938a8c6d",
+			"id": "de1dfcd3-cec9-4cec-adcc-37cbd8089582",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "9a41cd0d-5f4d-4367-b5bf-634b789bc783",
+			"id": "541ee90e-dc68-4d5f-b77e-e051743c634a",
 			"key": "reqBody",
 			"value": ""
 		}
