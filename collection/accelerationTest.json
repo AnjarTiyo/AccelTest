@@ -1052,7 +1052,7 @@
 									"var jsonData = pm.response.json();",
 									"",
 									"console.log(testCase);",
-									"console.log(pm.request.body)",
+									"console.log(pm.request.body);",
 									"console.log(jsonData);",
 									"",
 									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
@@ -1167,17 +1167,17 @@
 	],
 	"variable": [
 		{
-			"id": "d3325010-f389-4e36-9b93-fc0c6487fcff",
+			"id": "b8c0c71e-1d6d-4d68-b9f0-65e982ac08b0",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "edcb0a57-0d4a-4730-b71d-1056e7a0ac1f",
+			"id": "fd81217b-4648-45b6-b979-5e88b46d5bf8",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "a24042db-be82-437f-8e27-84028fabe219",
+			"id": "f2e166b6-29be-47af-b7d3-c81c0041174b",
 			"key": "reqBody",
 			"value": ""
 		}
