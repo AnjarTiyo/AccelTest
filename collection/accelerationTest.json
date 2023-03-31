@@ -988,6 +988,53 @@
 			"name": "05-Logout",
 			"item": [
 				{
+					"name": "Login for Update Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9c3956d7-ab22-4968-ac97-2cddd0ecef3c",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.environment.set(\"sessionToken\", jsonData.data.access_token.token);",
+									"pm.environment.set(\"activeSession\", jsonData.data.access_token.token);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5ccae196-9de2-41cb-a982-10ae01b7202a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9d482929-4b6c-4dab-a291-ce051eba96d5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"{{editedUsername}}\",\n    \"password\" : \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/auth"
+					},
+					"response": []
+				},
+				{
 					"name": "Logout",
 					"event": [
 						{
@@ -1110,17 +1157,17 @@
 	],
 	"variable": [
 		{
-			"id": "d40eb55e-4117-4120-aedd-b76848d87813",
+			"id": "0551dbf9-5f07-4ad5-9f07-944338882a3f",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "642d570b-c665-4bc6-b529-240c921010f7",
+			"id": "13310761-eba0-4d6c-b677-29f9532409b8",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "51bcedcd-28e4-4fbe-a621-8caa06a34f96",
+			"id": "2be08398-5a15-4247-bfd5-2e4a918ed025",
 			"key": "reqBody",
 			"value": ""
 		}
