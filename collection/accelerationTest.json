@@ -1011,7 +1011,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "{{sessionToken}}"
+								"token": "{{session}}"
 							}
 						},
 						"method": "POST",
@@ -1063,17 +1063,17 @@
 	],
 	"variable": [
 		{
-			"id": "d6ea0208-8778-4965-aae0-1df3b76451a4",
+			"id": "74e4887c-de4d-4523-9a34-cfa4253505f3",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "032132ef-30bf-4043-823b-4a923636ec62",
+			"id": "0c72f028-b658-4eee-a32d-2c6e44360354",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "2af69f08-3010-4fbf-9520-3d99d947d103",
+			"id": "de63bfe2-a948-4741-bdbb-6b197d8f07ed",
 			"key": "reqBody",
 			"value": ""
 		}
