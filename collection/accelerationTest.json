@@ -1,0 +1,539 @@
+{
+	"info": {
+		"_postman_id": "1c084688-209f-4b85-95be-b5739c31b98a",
+		"name": "Tugas Acceleration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01-Registration",
+			"item": [
+				{
+					"name": "Registration",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "08c57659-caaa-4903-9589-67a607a9f29f",
+								"exec": [
+									"const username = pm.iterationData.get(\"username\");",
+									"const email = pm.iterationData.get(\"email\");",
+									"const password = pm.iterationData.get(\"password\");",
+									"const name = pm.iterationData.get(\"name\");",
+									"const authType = pm.iterationData.get(\"authType\");",
+									"const testType = pm.iterationData.get(\"testType\");",
+									"const usernameStatus = pm.iterationData.get(\"usernameStatus\");",
+									"const passwordStatus = pm.iterationData.get(\"passwordStatus\");",
+									"const emailStatus = pm.iterationData.get(\"emailStatus\");",
+									"const nameStatus = pm.iterationData.get(\"nameStatus\");",
+									"",
+									"// function randomString(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'){",
+									"//     if (!minValue) {",
+									"//         minValue = 20;",
+									"//         maxValue = 20;",
+									"//     }",
+									"",
+									"//     if (!maxValue){",
+									"//         maxValue = minValue;",
+									"//     }",
+									"    ",
+									"//     let length = _.random(minValue, maxValue), randomString = \"\";",
+									"",
+									"//     for (let i = 0; i < length; i++)",
+									"//     randomString += dataSet.charAt(Math.floor(Math.random() * dataSet.length))",
+									"//     return randomString;",
+									"// }",
+									"",
+									"// if (username == \"{{$randomUserName}}\"){",
+									"//     pm.collectionVariables.set(\"username\", randomString());",
+									"// }",
+									"",
+									"// if (email == \"{{$randomEmail}}\"){",
+									"//     pm.collectionVariables.set(\"email\", randomString() + \"@email.com\");",
+									"// }",
+									"",
+									"// if (email == \"{{$randomName}}\"){",
+									"//     pm.collectionVariables.set(\"name\", randomString() + \" \" + randomString());",
+									"// }",
+									"",
+									"if (authType == \"null\"){",
+									"    pm.environment.set(\"usernameTahuBulat\", \"\");",
+									"    pm.environment.set(\"passwordTahuBulat\", \"\");",
+									"}else {",
+									"    pm.environment.set(\"usernameTahuBulat\", \"tahubulat\");",
+									"    pm.environment.set(\"passwordTahuBulat\", \"enaksekali\");",
+									"}",
+									"",
+									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\" && emailStatus== \"TRUE\" && nameStatus== \"TRUE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"        \"email\": email,",
+									"        \"name\": name",
+									"    };",
+									"}",
+									"",
+									"else if(usernameStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"password\": password,",
+									"        \"email\": email,",
+									"        \"name\": name",
+									"    };",
+									"}",
+									"else if(passwordStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"email\": email,",
+									"        \"name\": name",
+									"    };",
+									"}",
+									"else if(emailStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"        \"name\": name",
+									"    };",
+									"}",
+									"else if(nameStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"        \"email\": email",
+									"    };",
+									"}",
+									"",
+									"pm.collectionVariables.set(\"reqBody\", JSON.stringify(body));"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "cbde2656-b88b-4027-be8d-d86b5c00b71d",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"const expectedMessage = pm.iterationData.get(\"expectedMessage\");",
+									"const testCase = pm.iterationData.get(\"testCase\");",
+									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\");",
+									"const testType = pm.iterationData.get(\"testType\");",
+									"const responseErrorCode = pm.iterationData.get(\"responseErrorCode\");",
+									"",
+									"console.log(\"Test Case: \" + testCase);",
+									"",
+									"//Funtionality test",
+									"",
+									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
+									"    pm.response.to.have.status(expectedStatusCode);",
+									"});",
+									"",
+									"if (testType == '(+)'){",
+									"    pm.test(\"Message contains: \" + expectedMessage , function () {",
+									"        pm.expect(jsonData.message).to.contains(expectedMessage);",
+									"    });",
+									"",
+									"    pm.test(\"Username is saved \", function () {",
+									"        pm.expect(jsonData.data.user.username).to.not.eql(null);",
+									"        pm.environment.set(\"registeredUsername\", jsonData.data.user.username);",
+									"    });",
+									"",
+									"    pm.test(\"Name is saved \", function () {",
+									"        pm.expect(jsonData.data.user.name).to.not.eql(null);",
+									"        pm.environment.set(\"registeredName\", jsonData.data.user.name);",
+									"    });",
+									"",
+									"    pm.test(\"Email is saved \", function () {",
+									"        pm.expect(jsonData.data.user.email).to.not.eql(null);",
+									"        pm.environment.set(\"registeredEmail\", jsonData.data.user.email);",
+									"    });",
+									"",
+									"}else{",
+									"    pm.test(\"Response error code is \" + responseErrorCode, function () {",
+									"        pm.expect(jsonData.error.code).to.eql(responseErrorCode);",
+									"    });",
+									"",
+									"    pm.test(\"Error message is \" + expectedMessage, function () {",
+									"        pm.expect(pm.response.text()).to.contain(expectedMessage);",
+									"    });",
+									"}",
+									"",
+									"",
+									"//Performance test",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "18b590f3-b499-43de-888c-335e474b970e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "{{usernameTahuBulat}}",
+								"password": "{{passwordTahuBulat}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{{reqBody}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/registration"
+					},
+					"response": []
+				}
+			],
+			"id": "a24db89e-6ac8-4eb3-a2de-c1da6e9d16fd"
+		},
+		{
+			"name": "02-Login",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9c3956d7-ab22-4968-ac97-2cddd0ecef3c",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"const testType = pm.iterationData.get(\"testType\");",
+									"const expectedStatusCode = pm.iterationData.get(\"expectedStatusCode\");",
+									"const responseErrorCode = pm.iterationData.get(\"responseErrorCode\");",
+									"const expectedMessage = pm.iterationData.get(\"expectedMessage\");",
+									"const testCase = pm.iterationData.get(\"testCase\");",
+									"",
+									"",
+									"pm.test(\"Status code is \" + expectedStatusCode, function () {",
+									"    pm.response.to.have.status(expectedStatusCode);",
+									"});",
+									"",
+									"console.log(pm.response.json());",
+									"",
+									"if(testType == \"(+)\"){",
+									"    pm.test(\"access_token is generated\", function () {",
+									"        pm.expect(jsonData.data.access_token).to.not.eql(null);",
+									"        pm.environment.set(\"sessionToken\", jsonData.data.access_token.token)",
+									"    });",
+									"}else{",
+									"    pm.test(\"Response error code is \" + responseErrorCode, function () {",
+									"        pm.expect(jsonData.error.code).to.eql(responseErrorCode);",
+									"    });",
+									"",
+									"    pm.test(\"Error message is \" + expectedMessage, function () {",
+									"        pm.expect(pm.response.text()).to.contain(expectedMessage);",
+									"    });",
+									"}",
+									"// pm.test(\"expires_at is 24 hours\", function () {",
+									"//     const generatedTime = jsonData.data.access_token.expires_at;",
+									"//     const current = new Date().getTime();",
+									"",
+									"//     var getDay = Math.ceil((generatedTime - current)/86400000);",
+									"",
+									"//     console.log(getDay)",
+									"",
+									"//     pm.expect(getDay).to.eql(1)",
+									"// });",
+									"",
+									"pm.test(\"Content-Type is application/json\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=UTF-8\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5ccae196-9de2-41cb-a982-10ae01b7202a",
+								"exec": [
+									"const username = pm.iterationData.get(\"username\");",
+									"const email = pm.iterationData.get(\"email\");",
+									"const password = pm.iterationData.get(\"password\");",
+									"const name = pm.iterationData.get(\"name\");",
+									"const authType = pm.iterationData.get(\"authType\");",
+									"const testType = pm.iterationData.get(\"testType\");",
+									"const usernameStatus = pm.iterationData.get(\"usernameStatus\");",
+									"const passwordStatus = pm.iterationData.get(\"passwordStatus\");",
+									"",
+									"",
+									"// function randomString(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'){",
+									"//     if (!minValue) {",
+									"//         minValue = 20;",
+									"//         maxValue = 20;",
+									"//     }",
+									"",
+									"//     if (!maxValue){",
+									"//         maxValue = minValue;",
+									"//     }",
+									"    ",
+									"//     let length = _.random(minValue, maxValue), randomString = \"\";",
+									"",
+									"//     for (let i = 0; i < length; i++)",
+									"//     randomString += dataSet.charAt(Math.floor(Math.random() * dataSet.length))",
+									"//     return randomString;",
+									"// }",
+									"",
+									"// if (username == \"{{$randomUserName}}\"){",
+									"//     pm.collectionVariables.set(\"username\", randomString());",
+									"// }",
+									"",
+									"// if (email == \"{{$randomEmail}}\"){",
+									"//     pm.collectionVariables.set(\"email\", randomString() + \"@email.com\");",
+									"// }",
+									"",
+									"// if (email == \"{{$randomName}}\"){",
+									"//     pm.collectionVariables.set(\"name\", randomString() + \" \" + randomString());",
+									"// }",
+									"",
+									"// if (authType == \"null\"){",
+									"//     pm.environment.set(\"usernameTahuBulat\", \"\");",
+									"//     pm.environment.set(\"passwordTahuBulat\", \"\");",
+									"// }else {",
+									"//     pm.environment.set(\"usernameTahuBulat\", \"tahubulat\");",
+									"//     pm.environment.set(\"passwordTahuBulat\", \"enaksekali\");",
+									"// }",
+									"",
+									"if(usernameStatus== \"TRUE\" && passwordStatus== \"TRUE\"){",
+									"    var body = {",
+									"        \"username\": username,",
+									"        \"password\": password,",
+									"    };",
+									"}",
+									"",
+									"else if(usernameStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"password\": password",
+									"    };",
+									"}",
+									"else if(passwordStatus == \"FALSE\"){",
+									"    var body = {",
+									"        \"username\": username",
+									"    };",
+									"}",
+									"",
+									"console.log(body);",
+									"",
+									"pm.collectionVariables.set(\"reqBody\", JSON.stringify(body));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "5162c752-6015-493d-9069-cb4215cee64e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{{reqBody}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/auth"
+					},
+					"response": []
+				}
+			],
+			"id": "67ee1eeb-872a-47f3-a338-76102b007150"
+		},
+		{
+			"name": "03-GetUserProfile",
+			"item": [
+				{
+					"name": "Get User Profile with valid token",
+					"id": "c82dc91a-c5e4-4140-8b84-2d2ab01e586b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": {
+								"headerPrefix": "Bearer",
+								"addTokenTo": "header"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/profile"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile with expired token",
+					"id": "81eaef64-ae3e-4227-b744-624163681a30",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": {
+								"headerPrefix": "Bearer",
+								"addTokenTo": "header"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/profile"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile without token",
+					"id": "fc32afef-c606-4b96-98ea-63cb6c8f68db",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": {
+								"headerPrefix": "Bearer",
+								"addTokenTo": "header"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/profile"
+					},
+					"response": []
+				}
+			],
+			"id": "bf239bd1-2d28-42d4-a24c-27b7ec744200"
+		},
+		{
+			"name": "04-UpdateProfile",
+			"item": [
+				{
+					"name": "Update Profile",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "41324c6e-f4ad-44b0-9318-13bd5fdf4e8f",
+								"exec": [
+									"var gender = [\"male\", \"female\"]",
+									"",
+									"pm.variables.set(\"randomGender\", gender[_.random(gender.length -1)]);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "cb2fc51c-fa28-4fb3-ad3e-8d6c86192db6",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Username is updated\", function () {",
+									"    pm.environment.set(\"registeredUsername\", jsonData.data.user.username)",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "410f9c28-6d8a-4e8f-9e02-8cbeefdef4fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": {
+								"headerPrefix": "Bearer",
+								"addTokenTo": "header"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"{{$randomUserName}}\",\n    \"name\": \"{{$randomFullName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"phone\": \"{{$randomPhoneNumber}}\",\n    \"gender\": \"{{randomGender}}\",\n    \"address\": \"{{$randomStreetAddress}}, {{$randomCity}}, {{$randomCountry}}\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/profile/update"
+					},
+					"response": []
+				}
+			],
+			"id": "8f5d001c-120a-4f88-a2f8-b860a6e90298"
+		},
+		{
+			"name": "05-Logout",
+			"item": [
+				{
+					"name": "Logout",
+					"id": "3bf31adb-a044-47d5-953a-43fc5c076e03",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": {
+								"headerPrefix": "Bearer",
+								"addTokenTo": "header"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/logout"
+					},
+					"response": []
+				}
+			],
+			"id": "2da55e82-ec4c-4003-adad-ec4910a22293"
+		}
+	],
+	"variable": [
+		{
+			"id": "e2506027-1d47-4f17-b93c-07f644e96120",
+			"key": "username",
+			"value": ""
+		},
+		{
+			"id": "eb71d6ed-6a7b-43ef-923c-0423166083e5",
+			"key": "email",
+			"value": ""
+		},
+		{
+			"id": "186c9282-b077-494c-b60e-278536255b4a",
+			"key": "reqBody",
+			"value": ""
+		}
+	]
+}
