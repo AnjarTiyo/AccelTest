@@ -631,17 +631,17 @@
 	],
 	"variable": [
 		{
-			"id": "e3aba468-1b6b-4d46-a5fe-d517c0384b7d",
+			"id": "273f0856-f7e6-40ba-b308-07659477f771",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "ab8898f8-b756-4ded-9d99-a211ddd45529",
+			"id": "db0535fa-0e82-4a1d-975c-286edb56fe7e",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "0f2dffc3-9fcc-4471-9bf4-18ce08ff930e",
+			"id": "4eb14a20-2ee7-43cf-a9ae-d47d3f47b110",
 			"key": "reqBody",
 			"value": ""
 		}
