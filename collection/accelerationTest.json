@@ -372,8 +372,7 @@
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"",
-									"",
-									"console.log(\"Get User Profile with valid token\")",
+									"console.log(\"Get User Profile with valid token\");",
 									"",
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -591,17 +590,17 @@
 	],
 	"variable": [
 		{
-			"id": "31ee05e8-8f0e-4387-8c5d-f8c3a5bdff94",
+			"id": "829c1a0f-35c0-455e-b4b8-5d811f4951bf",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "e0582580-773e-477e-a72d-ec262558b3e0",
+			"id": "e9e32ade-a8ea-4cb7-80b5-6204c248b7ee",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "b0b8100b-88fd-4884-ba15-a13f446d2cf9",
+			"id": "6090b8b9-affc-4fe9-bc9c-2b33a9c91d1b",
 			"key": "reqBody",
 			"value": ""
 		}
