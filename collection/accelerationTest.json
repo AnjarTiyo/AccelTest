@@ -650,8 +650,6 @@
 									"    };",
 									"}",
 									"",
-									"console.log(JSON.stringify(body))",
-									"",
 									"pm.collectionVariables.set(\"reqBody\", JSON.stringify(body));"
 								],
 								"type": "text/javascript"
@@ -777,17 +775,17 @@
 	],
 	"variable": [
 		{
-			"id": "9397e949-5fca-4e44-9081-ee025b90cea8",
+			"id": "d9df8df3-b4e7-4d5e-ae87-422574ec1d6f",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "04b9ebd9-94b0-4942-9ecb-cfdc3c73d4ea",
+			"id": "c28196ba-4016-488f-986f-e6db2c72366d",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "e5c45558-5978-4ed4-9fa4-4f9361313a35",
+			"id": "753b30c9-be4b-4b55-b41a-7d8d417b7212",
 			"key": "reqBody",
 			"value": ""
 		}
