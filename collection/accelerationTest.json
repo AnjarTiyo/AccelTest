@@ -458,6 +458,10 @@
 									"",
 									"pm.test(\"Status code is 401\", function () {",
 									"    pm.response.to.have.status(401);",
+									"});",
+									"",
+									"pm.test(\"Message is correct\", function () {",
+									"    pm.response.to.have.status(\"Unauthorized\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -618,17 +622,17 @@
 	],
 	"variable": [
 		{
-			"id": "4197647d-775a-41f3-bb9e-dfa2807f75e4",
+			"id": "8e473d1f-eb47-497e-a58d-174b9812e09b",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "e890a505-44c4-4332-9f69-19fd06ba4733",
+			"id": "93f65579-3095-4056-9bcc-03e652ef5c89",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "297f9ce4-01d8-48a9-a3fc-6bebbabf7faa",
+			"id": "20c10921-4fef-4ad1-bdf9-8e902383d261",
 			"key": "reqBody",
 			"value": ""
 		}
