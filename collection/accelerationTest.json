@@ -1012,10 +1012,12 @@
 									"",
 									"    pm.environment.set(\"inactiveSession\", pm.environment.get(\"session\"));",
 									"}else {",
+									"    pm.test(\"Response error code is \" + responseErrorCode, function () {",
+									"        pm.expect(jsonData.error.code).to.eql(responseErrorCode);",
+									"    });",
 									"",
-									"    pm.test(\"Your test name\", function () {",
-									"        ",
-									"        pm.expect(jsonData.value).to.eql(100);",
+									"    pm.test(\"Error message is \" + expectedMessage, function () {",
+									"        pm.expect(pm.response.text()).to.contain(expectedMessage);",
 									"    });",
 									"}",
 									"",
@@ -1108,17 +1110,17 @@
 	],
 	"variable": [
 		{
-			"id": "fbdad1b3-e3e9-433a-ad16-5d0e7148d7ab",
+			"id": "e1511ed3-1455-4a0a-b901-dfddb1aecd93",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "62455f2e-ac88-465e-bfa3-59368a6912a5",
+			"id": "89047e73-75e4-4e8e-8c4b-e62d0fdda00e",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "1e1b0e47-2673-4fb3-bad8-0a68478bbd43",
+			"id": "fefa5a2d-e296-45bb-a662-b74c171ec1f9",
 			"key": "reqBody",
 			"value": ""
 		}
