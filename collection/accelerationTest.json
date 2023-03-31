@@ -895,12 +895,19 @@
 									"",
 									"    pm.test(\"Name is saved \", function () {",
 									"        pm.expect(jsonData.data.user.name).to.not.eql(null);",
-									"        pm.environment.set(\"registeredName\", jsonData.data.user.name);",
+									"        pm.environment.set(\"edited\", jsonData.data.user.name);",
 									"    });",
 									"",
-									"    pm.test(\"Email is saved \", function () {",
-									"        pm.expect(jsonData.data.user.email).to.not.eql(null);",
-									"        pm.environment.set(\"registeredEmail\", jsonData.data.user.email);",
+									"    pm.test(\"Gender is updated\", function () {",
+									"        pm.expect(jsonData.data.user.gender).to.be.oneOf([\"male\", \"female\"]);",
+									"    });",
+									"",
+									"    pm.test(\"Phone is updated \", function () {",
+									"        pm.expect(jsonData.data.user.phone).to.not.eql(null);",
+									"    });",
+									"",
+									"    pm.test(\"Address is updated \", function () {",
+									"        pm.expect(jsonData.data.user.address).to.not.eql(null);",
 									"    });",
 									"",
 									"}else{",
@@ -1055,17 +1062,17 @@
 	],
 	"variable": [
 		{
-			"id": "70f1517d-b942-4318-a769-663d14b82e3d",
+			"id": "4d6582d9-3424-4356-9e9f-b64f9042805e",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "b980cb68-8691-40bc-8d21-279e479f6c6d",
+			"id": "1477ca6b-d777-41b3-8a24-645811f4e6c3",
 			"key": "email",
 			"value": ""
 		},
 		{
-			"id": "ab9a8810-9810-4041-949c-cceb45957316",
+			"id": "66e25d2f-c880-4e62-9f5b-28464e4e274e",
 			"key": "reqBody",
 			"value": ""
 		}
