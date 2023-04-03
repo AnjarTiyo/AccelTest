@@ -1,0 +1,4 @@
+testCase,testType,authType,username,password,usernameStatus,passwordStatus,expectedStatusCode,responseErrorCode,expectedMessage
+Logout with valid login session,(+),activeSession,{{registeredUsername}},password,TRUE,TRUE,201,,Success
+Logout already logged out session,(-),inactiveSession,{{registeredUsername}},password,TRUE,TRUE,401,401,already logout
+Logout without session token,(-),null,{{registeredUsername}},invalid,TRUE,TRUE,401,401,Unauthorized

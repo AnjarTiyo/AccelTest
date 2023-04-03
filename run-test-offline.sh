@@ -19,7 +19,7 @@ newman run ./collection/accelerationTest.json --folder "04-UpdateProfile" -e ./e
 
 echo "Running test for endpoint ./logout \n"
 
-newman run ./collection/accelerationTest.json --folder "05-Logout" -e ./environment/accell-dev.postman_environment.json -d ./data/logoutData.csv
+newman run ./collection/accelerationTest.json --folder "05-Logout" -e ./environment/accell-dev.postman_environment.json -d ./data/logoutData.csv -d ./data/logoutData.csv
 
 
 echo "Test Complete"
